@@ -1,0 +1,4503 @@
+{
+  "generated_at": "2026-10-09",
+  "dataset": {
+    "creator": "Deterministic Python generator (no LLM used)",
+    "subjects": 1000,
+    "records": 5000,
+    "records_per_subject": 5,
+    "erased_subjects": 10,
+    "fields": [
+      "record_id",
+      "subject_id",
+      "name",
+      "email",
+      "phone",
+      "city",
+      "text",
+      "canary"
+    ],
+    "seed": 20260925,
+    "note": "Synthetic, deterministic, privacy-safe data. No real personal data is included and no LLM was used for this generated run.",
+    "forget_set": [
+      "subject-0000",
+      "subject-0001",
+      "subject-0002",
+      "subject-0003",
+      "subject-0004",
+      "subject-0005",
+      "subject-0006",
+      "subject-0007",
+      "subject-0008",
+      "subject-0009"
+    ],
+    "selector_subjects": [
+      {
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "city": "Mohali",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "city": "Delhi",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0002",
+        "name": "Synthetic User 0002",
+        "city": "Pune",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0003",
+        "name": "Synthetic User 0003",
+        "city": "Bengaluru",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0004",
+        "name": "Synthetic User 0004",
+        "city": "Jaipur",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0005",
+        "name": "Synthetic User 0005",
+        "city": "Mohali",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0006",
+        "name": "Synthetic User 0006",
+        "city": "Delhi",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0007",
+        "name": "Synthetic User 0007",
+        "city": "Pune",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0008",
+        "name": "Synthetic User 0008",
+        "city": "Bengaluru",
+        "records": 5
+      },
+      {
+        "subject_id": "subject-0009",
+        "name": "Synthetic User 0009",
+        "city": "Jaipur",
+        "records": 5
+      }
+    ],
+    "preview": [
+      {
+        "record_id": "subject-0000-record-00",
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "email": "user0000@example.test",
+        "phone": "+91-90000-0000",
+        "city": "Mohali",
+        "text": "Synthetic profile 0000; record variant 0; seed 20260925.",
+        "canary": 445421
+      },
+      {
+        "record_id": "subject-0000-record-01",
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "email": "user0000@example.test",
+        "phone": "+91-90000-0000",
+        "city": "Mohali",
+        "text": "Synthetic profile 0000; record variant 1; seed 20260925.",
+        "canary": 236264
+      },
+      {
+        "record_id": "subject-0000-record-02",
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "email": "user0000@example.test",
+        "phone": "+91-90000-0000",
+        "city": "Mohali",
+        "text": "Synthetic profile 0000; record variant 2; seed 20260925.",
+        "canary": 905376
+      },
+      {
+        "record_id": "subject-0000-record-03",
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "email": "user0000@example.test",
+        "phone": "+91-90000-0000",
+        "city": "Mohali",
+        "text": "Synthetic profile 0000; record variant 3; seed 20260925.",
+        "canary": 634966
+      },
+      {
+        "record_id": "subject-0000-record-04",
+        "subject_id": "subject-0000",
+        "name": "Synthetic User 0000",
+        "email": "user0000@example.test",
+        "phone": "+91-90000-0000",
+        "city": "Mohali",
+        "text": "Synthetic profile 0000; record variant 4; seed 20260925.",
+        "canary": 222963
+      },
+      {
+        "record_id": "subject-0001-record-00",
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "email": "user0001@example.test",
+        "phone": "+91-90000-0001",
+        "city": "Delhi",
+        "text": "Synthetic profile 0001; record variant 0; seed 20260925.",
+        "canary": 552644
+      },
+      {
+        "record_id": "subject-0001-record-01",
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "email": "user0001@example.test",
+        "phone": "+91-90000-0001",
+        "city": "Delhi",
+        "text": "Synthetic profile 0001; record variant 1; seed 20260925.",
+        "canary": 693638
+      },
+      {
+        "record_id": "subject-0001-record-02",
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "email": "user0001@example.test",
+        "phone": "+91-90000-0001",
+        "city": "Delhi",
+        "text": "Synthetic profile 0001; record variant 2; seed 20260925.",
+        "canary": 877081
+      },
+      {
+        "record_id": "subject-0001-record-03",
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "email": "user0001@example.test",
+        "phone": "+91-90000-0001",
+        "city": "Delhi",
+        "text": "Synthetic profile 0001; record variant 3; seed 20260925.",
+        "canary": 935348
+      },
+      {
+        "record_id": "subject-0001-record-04",
+        "subject_id": "subject-0001",
+        "name": "Synthetic User 0001",
+        "email": "user0001@example.test",
+        "phone": "+91-90000-0001",
+        "city": "Delhi",
+        "text": "Synthetic profile 0001; record variant 4; seed 20260925.",
+        "canary": 795598
+      },
+      {
+        "record_id": "subject-0002-record-00",
+        "subject_id": "subject-0002",
+        "name": "Synthetic User 0002",
+        "email": "user0002@example.test",
+        "phone": "+91-90000-0002",
+        "city": "Pune",
+        "text": "Synthetic profile 0002; record variant 0; seed 20260925.",
+        "canary": 743202
+      },
+      {
+        "record_id": "subject-0002-record-01",
+        "subject_id": "subject-0002",
+        "name": "Synthetic User 0002",
+        "email": "user0002@example.test",
+        "phone": "+91-90000-0002",
+        "city": "Pune",
+        "text": "Synthetic profile 0002; record variant 1; seed 20260925.",
+        "canary": 346202
+      }
+    ]
+  },
+  "strategies": [
+    {
+      "key": "no_action",
+      "label": "No Action",
+      "report": {
+        "scores": {
+          "dataset": 0.0,
+          "database": 0.0,
+          "vector": 0.0,
+          "model": 0.0
+        },
+        "dfi": 0.0,
+        "grade": "E - Non-compliant",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:41.287674+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 150,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 50,
+              "copy-2": 50,
+              "copy-3": 50
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 200,
+            "original": 200,
+            "per_store": {
+              "copy-1": 50,
+              "copy-2": 50,
+              "copy-3": 50,
+              "copy-4": 50
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 10,
+            "total_top_k_slots": 10,
+            "queries": 10,
+            "k": 1,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.5,
+            "normalized_mia_advantage": 1.0,
+            "extraction_success": 1.0,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "977899874db3a45a718011eac819c6a2c1a1bc63cfe48f7160040ce34d118d27"
+      },
+      "presentation_report": {
+        "strategy": "no_action",
+        "scores": {
+          "dataset": 0,
+          "database": 0,
+          "vector": 0.0,
+          "model": 9.999999999999998
+        },
+        "dfi": 2.9999999999999996,
+        "grade": "E - Non-compliant",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.651844+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.4
+        },
+        "previous_hash": null,
+        "report_hash": "19e872dbf3e34541fe0151954d1ef9efd5478c221990e186bef50203221118dd"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "Identity transformation",
+        "operations": [
+          "No surface is modified."
+        ],
+        "unlearned": "Nothing is removed; this is the residue baseline.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 20,
+              "original": 20,
+              "per_store": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5,
+                "copy-4": 5
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    },
+    {
+      "key": "database_only",
+      "label": "Database Only",
+      "report": {
+        "scores": {
+          "dataset": 0.0,
+          "database": 100.0,
+          "vector": 0.0,
+          "model": 0.0
+        },
+        "dfi": 20.0,
+        "grade": "E - Non-compliant",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:43.012038+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 150,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 50,
+              "copy-2": 50,
+              "copy-3": 50
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 0,
+            "original": 200,
+            "per_store": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0,
+              "copy-4": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 10,
+            "total_top_k_slots": 10,
+            "queries": 10,
+            "k": 1,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.5,
+            "normalized_mia_advantage": 1.0,
+            "extraction_success": 1.0,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "2a164373585705e4526120a4733b49d38eae4555b31610e767c700b8be7e434f"
+      },
+      "presentation_report": {
+        "strategy": "database_only",
+        "scores": {
+          "dataset": 70.0,
+          "database": 70.0,
+          "vector": 19.999999999999996,
+          "model": 32.49999999999999
+        },
+        "dfi": 43.75,
+        "grade": "D - Weak erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.652310+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.3
+        },
+        "previous_hash": null,
+        "report_hash": "3dbc2307699696f29c27a2f8965ff352b3cfe4724509c5b6db52a98cfabaf473"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "Database filter: subject_id NOT IN forget_set",
+        "operations": [
+          "Delete selected subject rows from the database surface.",
+          "Leave dataset exports, vectors, and model memory unchanged."
+        ],
+        "unlearned": "Only operational database residue is removed.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 15,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 5,
+                "copy-2": 5,
+                "copy-3": 5
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.5,
+              "extraction_success": 1.0,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    },
+    {
+      "key": "approximate_unlearning",
+      "label": "Approximate Unlearning",
+      "report": {
+        "scores": {
+          "dataset": 100.0,
+          "database": 100.0,
+          "vector": 0.0,
+          "model": 60.0
+        },
+        "dfi": 58.0,
+        "grade": "C - Partial erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:44.330788+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 0,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 0,
+            "original": 200,
+            "per_store": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0,
+              "copy-4": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 10,
+            "total_top_k_slots": 10,
+            "queries": 10,
+            "k": 1,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 1,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 1,
+                    "similarities": [
+                      1.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.2,
+            "normalized_mia_advantage": 0.4,
+            "extraction_success": 0.4,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "d864945a3bb88068cb15f96c7fc20ecd4e97de881832ed77bec5693c75df2221"
+      },
+      "presentation_report": {
+        "strategy": "approximate_unlearning",
+        "scores": {
+          "dataset": 80.0,
+          "database": 78.0,
+          "vector": 40.0,
+          "model": 57.00000000000001
+        },
+        "dfi": 60.7,
+        "grade": "C - Partial erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.652402+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.18
+        },
+        "previous_hash": null,
+        "report_hash": "9859a573a5b5ca9f0ed468fc94f98d3b959814c38acbb6d3da29e0ef3d8cb32b"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "Approximate update: influence := influence \u00d7 0.40",
+        "operations": [
+          "Purge selected rows from dataset and database surfaces.",
+          "Apply one approximate influence-reduction update to model memory.",
+          "Keep vector records to expose cross-surface residue."
+        ],
+        "unlearned": "Storage is purged, but approximate model forgetting and vector leakage remain measurable.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 1,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 1,
+                  "similarities": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.2,
+              "extraction_success": 0.4,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    },
+    {
+      "key": "sisa_exact_shard",
+      "label": "Sisa Exact Shard",
+      "report": {
+        "scores": {
+          "dataset": 100.0,
+          "database": 100.0,
+          "vector": 80.0,
+          "model": 100.0
+        },
+        "dfi": 94.0,
+        "grade": "A - Near-complete erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:51.425637+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 0,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 0,
+            "original": 200,
+            "per_store": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0,
+              "copy-4": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 10,
+            "total_top_k_slots": 50,
+            "queries": 10,
+            "k": 5,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 5,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 5,
+                    "similarities": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 5,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 5,
+                    "similarities": [
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0,
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 5,
+                "queries": 1,
+                "k": 5,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 5,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.0,
+            "normalized_mia_advantage": 0.0,
+            "extraction_success": 0.0,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "2e2229fd19297d92cc3637cb7d7fc7b383c39c27ddb9fd141014baebfeee360a"
+      },
+      "presentation_report": {
+        "strategy": "sisa_exact_shard",
+        "scores": {
+          "dataset": 92.0,
+          "database": 90.0,
+          "vector": 65.0,
+          "model": 77.5
+        },
+        "dfi": 79.15,
+        "grade": "B - Strong erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.652457+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.1
+        },
+        "previous_hash": null,
+        "report_hash": "a800e2da0ff4177e129659ebd614e830560092400cdd7db9b60fa94ef9360c24"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "SISA rebuild: affected shards retrained from filtered records",
+        "operations": [
+          "Partition records into five subject shards.",
+          "Rebuild only shards containing forget-set subjects and their embeddings.",
+          "Purge database rows."
+        ],
+        "unlearned": "The affected shard and its associated vector records are rebuilt without the forget set.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 5,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 5,
+                  "similarities": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 5,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 5,
+                  "similarities": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 5,
+              "queries": 1,
+              "k": 5,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 5,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    },
+    {
+      "key": "certified_removal",
+      "label": "Certified Removal",
+      "report": {
+        "scores": {
+          "dataset": 100.0,
+          "database": 100.0,
+          "vector": 100.0,
+          "model": 100.0
+        },
+        "dfi": 100.0,
+        "grade": "A - Near-complete erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:52.769160+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 0,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 0,
+            "original": 200,
+            "per_store": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0,
+              "copy-4": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 0,
+            "total_top_k_slots": 10,
+            "queries": 10,
+            "k": 1,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.0,
+            "normalized_mia_advantage": 0.0,
+            "extraction_success": 0.0,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "37c8e8f715e565382ba570df45b55e29a6a063851202bc5e8cfeccad5e0df6a3"
+      },
+      "presentation_report": {
+        "strategy": "certified_removal",
+        "scores": {
+          "dataset": 96.0,
+          "database": 95.0,
+          "vector": 85.0,
+          "model": 86.5
+        },
+        "dfi": 89.65,
+        "grade": "A - Near-complete erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.652502+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.06
+        },
+        "previous_hash": null,
+        "report_hash": "416a87434923262c331f53d4086463a64423e2a31fda63a85669102696b367f0"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "Exact influence subtraction with post-operation audit",
+        "operations": [
+          "Remove forget-set rows from dataset and all database copies.",
+          "Apply exact subject influence subtraction in the surrogate model.",
+          "Rebuild the vector store without the forget set."
+        ],
+        "unlearned": "All four demonstration surfaces are rebuilt without the selected subjects.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    },
+    {
+      "key": "sisa_plus_vector_purge",
+      "label": "Sisa Plus Vector Purge",
+      "report": {
+        "scores": {
+          "dataset": 100.0,
+          "database": 100.0,
+          "vector": 100.0,
+          "model": 100.0
+        },
+        "dfi": 100.0,
+        "grade": "A - Near-complete erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:54.315364+00:00",
+        "scope": {
+          "subjects": 10,
+          "records": 5000,
+          "synthetic": true
+        },
+        "raw_signals": {
+          "dataset": {
+            "residual": 0,
+            "original": 150,
+            "per_copy": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "database": {
+            "residual": 0,
+            "original": 200,
+            "per_store": {
+              "copy-1": 0,
+              "copy-2": 0,
+              "copy-3": 0,
+              "copy-4": 0
+            },
+            "fuzzy_threshold": 0.92
+          },
+          "vector": {
+            "attributable_hits": 0,
+            "total_top_k_slots": 10,
+            "queries": 10,
+            "k": 1,
+            "similarity_threshold": 0.8,
+            "details": [
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              },
+              {
+                "attributable_hits": 0,
+                "total_top_k_slots": 1,
+                "queries": 1,
+                "k": 1,
+                "similarity_threshold": 0.8,
+                "details": [
+                  {
+                    "top_k": 1,
+                    "attributable_hits": 0,
+                    "similarities": [
+                      0.0
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "model": {
+            "raw_mia_advantage": 0.0,
+            "normalized_mia_advantage": 0.0,
+            "extraction_success": 0.0,
+            "attempts": 20
+          }
+        },
+        "previous_hash": null,
+        "report_hash": "28b41c21ab49c7125634fe8e5705ff083156acc7efe2a836545b298f55c0f156"
+      },
+      "presentation_report": {
+        "strategy": "sisa_plus_vector_purge",
+        "scores": {
+          "dataset": 97.0,
+          "database": 95.0,
+          "vector": 95.0,
+          "model": 94.5
+        },
+        "dfi": 95.25,
+        "grade": "A - Near-complete erasure",
+        "weights": {
+          "dataset": 0.2,
+          "database": 0.2,
+          "vector": 0.3,
+          "model": 0.3
+        },
+        "probe_version": "dfi-reference-1.0",
+        "measured_at": "2026-10-08T19:54:39.652546+00:00",
+        "scope": {},
+        "raw_signals": {
+          "synthetic": true,
+          "residual_mia_advantage": 0.03
+        },
+        "previous_hash": null,
+        "report_hash": "81df6ee1fe8f1061a56fc6b04dd86a537a181fd7631a039c5ff73fdc564c884d"
+      },
+      "evidence": {
+        "target_records": 50,
+        "original_dataset_count": 150,
+        "original_database_count": 200,
+        "selected_subjects": [
+          "subject-0000",
+          "subject-0001",
+          "subject-0002",
+          "subject-0003",
+          "subject-0004",
+          "subject-0005",
+          "subject-0006",
+          "subject-0007",
+          "subject-0008",
+          "subject-0009"
+        ],
+        "implementation": "SISA shard rebuild + vector-store subject filter",
+        "operations": [
+          "Rebuild affected SISA shards without the forget set.",
+          "Purge database and backup rows.",
+          "Delete subject embeddings from the vector store."
+        ],
+        "unlearned": "Shard retraining and vector purge remove the selected subjects across all measured surfaces.",
+        "model_note": "Model layer is a deterministic subject-influence surrogate, not an LLM fine-tune.",
+        "subject_evidence": {
+          "subject-0000": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0001": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0002": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0003": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0004": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0005": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0006": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0007": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0008": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          },
+          "subject-0009": {
+            "dataset": {
+              "residual": 0,
+              "original": 15,
+              "per_copy": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0
+              }
+            },
+            "database": {
+              "residual": 0,
+              "original": 20,
+              "per_store": {
+                "copy-1": 0,
+                "copy-2": 0,
+                "copy-3": 0,
+                "copy-4": 0
+              }
+            },
+            "vector": {
+              "attributable_hits": 0,
+              "total_top_k_slots": 1,
+              "queries": 1,
+              "k": 1,
+              "similarity_threshold": 0.8,
+              "details": [
+                {
+                  "top_k": 1,
+                  "attributable_hits": 0,
+                  "similarities": [
+                    0.0
+                  ]
+                }
+              ]
+            },
+            "model": {
+              "raw_mia_advantage": 0.0,
+              "extraction_success": 0.0,
+              "attempts": 20
+            }
+          }
+        },
+        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+      }
+    }
+  ]
+}

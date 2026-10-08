@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1110" />
+  <meta name="description" content="Digital Forgetting Index: a visual research presentation for measuring AI data erasure across four system surfaces." />
+  <title>DFI / Digital Forgetting Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="DFI home">
+        <span class="brand-mark">DFI</span><span class="brand-divider">/</span><span class="brand-name">DIGITAL FORGETTING INDEX</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#model">Model</a>
+        <a href="#audit">Live audit</a>
+        <a href="#data">Data</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#panel">Panel guide</a>
+      </nav>
+      <span class="status-pill"><i></i> RESEARCH PROTOTYPE</span>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A cross-surface audit metric for AI erasure</p>
+          <h1>Deletion is an action.<br /><em>Forgetting is a measurement.</em></h1>
+          <p class="hero-lede">The Digital Forgetting Index turns an invisible question — “what survived deletion?” — into a traceable score across datasets, databases, vector stores, and model memory.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#audit">Explore the live audit <span>↘</span></a>
+            <a class="button button-ghost" href="#model">See the four layers</a>
+          </div>
+          <div class="hero-footnote"><span class="mono">SYNTHETIC BENCHMARK</span><span class="dot"></span> 1,000 subjects · 5,000 records · 10 forget targets</div>
+        </div>
+        <div class="hero-score reveal reveal-delay">
+          <div class="score-orbit orbit-one"></div>
+          <div class="score-orbit orbit-two"></div>
+          <div class="score-card">
+            <div class="score-card-top"><span>DFI / LIVE SYNTHETIC RUN</span><span class="live-dot">● LIVE</span></div>
+            <div class="score-ring" id="heroRing" style="--score:0">
+              <div class="score-ring-inner"><span class="score-number" id="heroScore">—</span><span class="score-label">/ 100</span></div>
+            </div>
+            <div class="score-grade"><span class="grade-tag">A</span><span id="heroGrade">NEAR-COMPLETE ERASURE</span></div>
+            <div class="layer-mini-list" id="heroLayers"></div>
+          </div>
+          <div class="score-annotation ann-left"><span class="annotation-line"></span> lower residue</div>
+          <div class="score-annotation ann-right">higher forgetting <span class="annotation-line"></span></div>
+        </div>
+      </section>
+
+      <section class="thesis-strip">
+        <div class="strip-label">THE PROBLEM</div>
+        <p>A primary-store delete can leave behind a <strong>forensically recoverable shadow</strong> — in an export, an embedding, a cache, or a model parameter.</p>
+        <div class="strip-stat"><span class="mono">4</span><small>RESIDUE<br />LAYERS</small></div>
+        <div class="strip-stat"><span class="mono">1</span><small>AUDITABLE<br />INDEX</small></div>
+      </section>
+
+      <section class="content-section" id="model">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> The measurement model</p><h2>One request.<br /><em>Four surfaces.</em></h2></div>
+          <p class="section-intro">DFI treats forgetting as a system property. Every surface gets its own adversarial probe before the signals are normalized into a composite score.</p>
+        </div>
+        <div class="layer-grid" id="layerGrid"></div>
+      </section>
+
+      <section class="flow-section" aria-label="DFI workflow">
+        <div class="flow-heading"><span class="mono">01 — 04</span><h2>From erasure request to evidence.</h2></div>
+        <div class="flow-track">
+          <div class="flow-line"></div>
+          <button class="flow-node active" data-flow="0"><span>01</span><strong>REQUEST</strong><small>subject asks to be forgotten</small></button>
+          <button class="flow-node" data-flow="1"><span>02</span><strong>PROBE</strong><small>attack each residue surface</small></button>
+          <button class="flow-node" data-flow="2"><span>03</span><strong>NORMALIZE</strong><small>convert signals to 0—100</small></button>
+          <button class="flow-node" data-flow="3"><span>04</span><strong>REPORT</strong><small>publish score + evidence</small></button>
+        </div>
+        <div class="flow-detail" id="flowDetail"><span class="mono">STEP 01</span><p>A data subject, or synthetic canary, becomes the audit target. The baseline is fixed before deletion so the denominator is evidence — not an assumption.</p></div>
+      </section>
+
+      <section class="audit-section content-section" id="audit">
+        <div class="section-heading audit-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> Interactive audit console</p><h2>Move the strategy.<br /><em>Watch residue move.</em></h2></div>
+          <div class="dataset-chip"><span class="chip-icon">◌</span><div><strong>SYNTHETIC DATASET</strong><small>1,000 subjects / 5,000 records / 10 forget targets</small></div></div>
+        </div>
+        <div class="audit-console">
+          <div class="strategy-panel">
+            <div class="panel-kicker">SELECT AN ERASURE STRATEGY</div>
+            <div class="strategy-list" id="strategyList"></div>
+            <div class="console-note"><span class="note-icon">i</span><p>The default ladder preserves the paper/PPT benchmark values. Each strategy also executes a different surface transformation; choose a custom forget set below to switch to live recomputed evidence. The model layer is a deterministic influence surrogate, not an LLM guarantee.</p></div>
+          </div>
+          <div class="result-panel">
+            <div class="result-top"><div><span class="panel-kicker">COMPOSITE DFI</span><div class="big-result"><span id="auditScore">—</span><small>/ 100</small></div></div><div class="result-grade" id="auditGrade">LOADING</div></div>
+            <div class="bar-chart" id="barChart"></div>
+            <div class="strategy-detail" id="strategyDetail"></div>
+            <div class="formula-row"><span class="mono">DFI = 0.20 D-RS + 0.20 DB-RS + 0.30 V-RS + 0.30 M-RS</span><span class="formula-result" id="formulaResult">—</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section content-section" id="data">
+        <div class="section-heading compact-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Data under audit</p><h2>See what was<br /><em>actually unlearned.</em></h2></div><p class="section-intro">The panel should be able to inspect the synthetic records, the forget set, and the provenance of the run before trusting the score.</p></div>
+        <div class="data-overview" id="dataOverview"></div>
+        <div class="selection-card">
+          <div class="card-title-row"><span class="panel-kicker">SELECT DATA TO UNLEARN</span><span class="mono" id="selectionCount">10 SELECTED</span></div>
+          <p>Choose one or more synthetic subjects. Every strategy is re-measured against the selected forget set, so the residual counts and DFI score change with the request.</p>
+          <div class="selection-actions"><button class="small-button" id="selectAll">SELECT ALL</button><button class="small-button" id="clearSelection">CLEAR</button></div>
+          <div class="subject-selector" id="subjectSelector"></div>
+          <div class="selection-note"><span class="mono">LIVE PIPELINE</span><span>selection → strategy operation → four probes → DFI</span></div>
+        </div>
+        <div class="data-grid">
+          <div class="data-preview-card"><div class="card-title-row"><span class="panel-kicker">RECORD PREVIEW</span><span class="mono">12 / 5,000 ROWS</span></div><div class="data-table-wrap" id="dataPreview"></div></div>
+          <div class="forget-card"><div class="card-title-row"><span class="panel-kicker">FORGET SET</span><span class="mono" id="forgetCount">10 SUBJECTS</span></div><p>The selected cohort is the target for every strategy. The probes test whether these subjects remain visible after the executed operation.</p><div class="forget-list" id="forgetList"></div><div class="creator-note" id="creatorNote"></div></div>
+        </div>
+      </section>
+
+      <section class="evidence-section content-section" id="evidence">
+        <div class="section-heading compact-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Evidence ladder</p><h2>Stronger removal.<br /><em>Higher DFI.</em></h2></div><p class="section-intro">The synthetic run is designed as a monotonicity check: the composite should rise as residual retention falls.</p></div>
+        <div class="benchmark-wrap"><div class="benchmark-chart" id="benchmarkChart"></div><div class="benchmark-caption"><span class="mono">FIG. 01</span><p>Composite DFI across six controlled erasure strategies. The gap between database-only deletion and vector purge is the point: one layer cannot stand in for the whole pipeline.</p></div></div>
+        <div class="evidence-bottom">
+          <div class="evidence-table" id="evidenceTable"></div>
+          <div class="evidence-callout"><span class="callout-number">90.9</span><span class="mono">PAPER WORKED EXAMPLE</span><p>The paper's 97 / 95 / 88 / 87 layer scores produce an exact weighted sum of 90.9 — reported as 91.0 after rounding.</p><a href="#panel">Use this in your panel talk ↗</a></div>
+        </div>
+      </section>
+
+      <section class="panel-section content-section" id="panel">
+        <div class="section-heading compact-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Panel guide</p><h2>Explain the model<br /><em>in three moves.</em></h2></div><p class="section-intro">A concise narrative for your supervisor or evaluation panel.</p></div>
+        <div class="talk-track">
+          <article><span class="talk-number">01</span><h3>Why this matters</h3><p>Deleting a database row is not the same as erasing influence from an AI pipeline. DFI makes hidden residue visible across four surfaces.</p></article>
+          <article><span class="talk-number">02</span><h3>How it works</h3><p>Each layer uses a specialized probe: fuzzy matching, database residue scanning, vector retrieval leakage, and model MIA/extraction evidence.</p></article>
+          <article><span class="talk-number">03</span><h3>What the score means</h3><p>The result is an empirical, auditable lower-bound-style signal — not proof of deletion or a differential-privacy guarantee.</p></article>
+        </div>
+        <div class="limitation-box"><span class="mono">SAY THIS CLEARLY</span><p>The current implementation validates the DFI measurement framework on a controlled synthetic dataset. Real production connectors and model-specific attacks are the next research stage.</p></div>
+      </section>
+    </main>
+
+    <footer class="footer"><div class="brand"><span class="brand-mark">DFI</span><span class="brand-divider">/</span><span class="brand-name">PROJECT PAGE</span></div><div class="footer-links"><a href="https://locuslab.github.io/tofu/" target="_blank" rel="noreferrer">TOFU ↗</a><a href="https://muse-bench.github.io/" target="_blank" rel="noreferrer">MUSE ↗</a><a href="https://unlearning-challenge.github.io/" target="_blank" rel="noreferrer">UNLEARNING CHALLENGE ↗</a><a href="https://gnueaj.github.io/Machine-Unlearning-Comparator/" target="_blank" rel="noreferrer">COMPARATOR ↗</a></div><span class="mono footer-note">RESEARCH PROTOTYPE / 2026</span></footer>
+  </div>
+  <script src="app.js?v=20261009-3"></script>
+</body>
+</html>

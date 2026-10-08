@@ -1,0 +1,20 @@
+{
+  "subjects": 1000,
+  "records": 5000,
+  "records_per_subject": 5,
+  "erased_subjects": 10,
+  "synthetic": true,
+  "privacy_note": "All values are generated; no real personal data is included.",
+  "creator": "Deterministic Python generator (no LLM used)",
+  "seed": 20260925,
+  "fields": [
+    "record_id",
+    "subject_id",
+    "name",
+    "email",
+    "phone",
+    "city",
+    "text",
+    "canary"
+  ]
+}
