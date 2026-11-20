@@ -65,14 +65,14 @@ class DFIReport:
 def grade_dfi(value: float) -> str:
     """Illustrative governance bands described in the paper."""
     if value < 40:
-        return "E - Non-compliant"
+        return "F - Non-Compliant"
     if value < 55:
-        return "D - Weak erasure"
+        return "D - Weak Erasure"
     if value < 70:
-        return "C - Partial erasure"
+        return "C - Partial Erasure"
     if value < 85:
-        return "B - Strong erasure"
-    return "A - Near-complete erasure"
+        return "B - Substantial Erasure"
+    return "A - Near-Complete Erasure"
 
 
 def compute_dfi(

@@ -1,56 +1,87 @@
 # Digital Forgetting Index (DFI)
 
-This repository implements the model in `Draft 1.pdf` as an executable, auditable Python reference implementation. It measures a single subject's post-erasure residue across four surfaces:
+This repository is the official reference implementation of the paper:
+> **Digital Forgetting Index: A Quantifiable Framework for Measuring AI Data Erasure**  
+> *Aditi Shukla, Vasu Bansal, Richa Tiwari* — AIT-CSE (AI & ML), Chandigarh University, Punjab, India.
 
-| Layer | Paper formula implemented | Reference probe |
-|---|---|---|
-| Dataset | `100 * (1 - N_match / N_total)` | exact/fuzzy record matching over discoverable copies |
-| Database | `100 * (1 - R_res / R_orig)` | matching over primary DB, replicas, logs, caches, and backups |
-| Vector store | `100 * (1 - I_top-k)` | cosine top-k queries, subject attribution, and threshold |
-| Model | `100 * (1 - 0.5 * (A_mia + A_ext))` | normalized MIA advantage plus extraction success rate |
+It measures a data subject's post-erasure residue across four surfaces defined in Section IV-C:
 
-The default composite is `0.20 * D-RS + 0.20 * DB-RS + 0.30 * V-RS + 0.30 * M-RS`. The implementation bounds all layer inputs, records raw probe signals, reports the paper's illustrative governance bands, and creates a SHA-256 report hash for audit chaining.
+| Layer | Paper Formula | Measurement Probe | Default Weight |
+|---|---|---|:---:|
+| **Dataset (D-RS)** | $100 \times (1 - N_{match} / N_{total})$ | Exact/fuzzy record scan across discoverable copies | 20% |
+| **Database (DB-RS)** | $100 \times (1 - R_{res} / R_{orig})$ | Exact match across primary DB, replicas, logs, caches, backups | 20% |
+| **Vector Store (V-RS)** | $100 \times (1 - I_{top-k})$ | Cosine top-$k$ queries, subject attribution above threshold $\tau$ | 30% |
+| **Model (M-RS)** | $100 \times (1 - 0.5 \times (A_{mia} + A_{ext}))$ | Normalized MIA attack signal + targeted extraction success rate | 30% |
 
-## Run
+$$\text{DFI} = 0.20 \cdot D\text{-}RS + 0.20 \cdot DB\text{-}RS + 0.30 \cdot V\text{-}RS + 0.30 \cdot M\text{-}RS$$
 
-Use the bundled Python runtime or any Python 3.10+ environment:
+### Governance Grading Bands (Paper Figure 3)
+
+| Band | Score Range | Governance Interpretation |
+|:---:|:---:|---|
+| **A** | 85 – 100 | Near-Complete Erasure |
+| **B** | 70 – 84 | Substantial Erasure |
+| **C** | 55 – 69 | Partial Erasure |
+| **D** | 40 – 54 | Weak Erasure |
+| **F** | 0 – 39 | Non-Compliant |
+
+---
+
+## Quick Start (1–2 Commands)
+
+Run the live demo directly in your terminal:
 
 ```powershell
-python -m dfi.cli benchmark
+python -m dfi.cli demo
+```
+This runs the full 6-strategy benchmark, verifies the Table III worked example (95.25), checks the Fig. 5 MIA-vs-DFI inverse relationship, and outputs the cryptographic SHA-256 audit hash.
+
+To regenerate synthetic data and prepare the interactive website:
+
+```powershell
+python -m dfi.cli setup
+```
+Then open `website/index.html` in any web browser.
+
+---
+
+## Testing & Verification
+
+Run the full automated test suite:
+
+```powershell
 python -m unittest discover -v
 ```
 
-The benchmark is deterministic and demonstrates monotonic DFI improvement from no action through database-only deletion, approximate unlearning, SISA-style shard removal, certified removal, and vector purge.
+All 10 unit tests verify mathematical bounds, probe counts, Table III worked example (95.25), and cross-surface erasure monotonicity.
 
-## Concrete synthetic experiment
+---
 
-The project now includes a privacy-safe synthetic dataset generator with 1,000 subjects, 5 records per subject, and 10 erased subjects by default (5,000 records total). It creates dataset and database copies, deterministic one-hot embeddings, subject-derived queries, and model-probe signals. Run:
+## Synthetic Canary Dataset (Paper Section IV-G)
 
-```powershell
-python -m dfi.cli generate-synthetic --output data/synthetic
-python -m dfi.cli export-web-data --output website/data
-python -m dfi.cli run-experiment --strategy sisa_plus_vector_purge
-```
+In accordance with Section IV-G of the paper, the benchmark is validated on a privacy-safe canary dataset constructed with:
 
-Use `--subjects`, `--records-per-subject`, and `--erased-subjects` to change the experiment size. The generated values are synthetic and contain no real personal information.
+| Item | Value | Paper Reference |
+|---|---:|---|
+| Subjects | 500 | Section IV-G |
+| Documents / Records per subject | 4 | Section IV-G |
+| Total documents | 2,000 | Section IV-G |
+| Erased subjects (forget set) | 10 | Section IV-G |
+| Dataset copies scanned | 3 | Section IV-C.1 |
+| Database stores scanned | 4 | Section IV-C.2 |
+| Vector similarity threshold ($\tau$) | 0.80 | Section IV-C.3 |
+| Vector top-$k$ | 5 | Section IV-C.3 |
+| Model extraction attempts | 20 | Section IV-C.4 |
 
-The default generated experiment uses:
+Deterministic IDs and embeddings ensure 100% reproducible audit hashes.
 
-| Item | Value |
-|---|---:|
-| Subjects | 1,000 |
-| Records per subject | 5 |
-| Total records | 5,000 |
-| Erased subjects | 10 |
-| Dataset copies scanned | 3 |
-| Database stores scanned | 4 |
-| Vector queries | 10 |
-| Vector top-k | 5 |
+---
 
-Stable synthetic subject IDs are used for attribution, deterministic one-hot embeddings make vector retrieval reproducible, and 20 deterministic model extraction trials are evaluated. Strategy retention settings are synthetic experimental controls; they represent different residue levels and are not claims about any specific production unlearning algorithm.
+## Auditability & Integrity
 
-The website reads `website/data/synthetic_experiment.json`, generated from the Python experiment runner. Its default ladder preserves the paper/PPT calibration (3.00, 43.75, 60.70, 79.15, 89.65, 95.25), while the six strategies execute concrete synthetic-surface operations in `dfi/strategies.py`; choosing a custom forget set switches the browser to recomputed live evidence. Rerun `export-web-data` after changing the dataset or strategy implementation.
-
-## Important interpretation
-
-DFI is an empirical lower-bound-style audit score, not proof of deletion and not a differential-privacy guarantee. Results are only meaningful when the auditor documents the scan scope, probe version, thresholds, model/database versions, and measurement time. Production MIA and extraction probes should be supplied by the deployment-specific audit harness; `ModelProbe` accepts their measured outputs rather than pretending a generic black-box model attack is universally valid.
+Every evaluation produces a tamper-evident `DFIReport` containing:
+- Composite score + all 4 sub-scores
+- Raw probe signals (records scanned, hits, MIA advantage, extraction successes)
+- Scope metadata (subject count, document count)
+- Audit timestamp (UTC ISO format)
+- Deterministic SHA-256 report hash for audit trail chaining (`previous_hash`)

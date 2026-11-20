@@ -8,8 +8,8 @@ import random
 from typing import Any
 
 
-DEFAULT_SUBJECTS = 1_000
-DEFAULT_RECORDS_PER_SUBJECT = 5
+DEFAULT_SUBJECTS = 500
+DEFAULT_RECORDS_PER_SUBJECT = 4
 DEFAULT_ERASED_SUBJECTS = 10
 DATASET_CREATOR = "Deterministic Python generator (no LLM used)"
 

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-09",
+  "generated_at": "2026-11-20",
   "dataset": {
     "creator": "Deterministic Python generator (no LLM used)",
-    "subjects": 1000,
-    "records": 5000,
-    "records_per_subject": 5,
+    "subjects": 500,
+    "records": 2000,
+    "records_per_subject": 4,
     "erased_subjects": 10,
     "fields": [
       "record_id",
@@ -35,61 +35,61 @@
         "subject_id": "subject-0000",
         "name": "Synthetic User 0000",
         "city": "Mohali",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0001",
         "name": "Synthetic User 0001",
         "city": "Delhi",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0002",
         "name": "Synthetic User 0002",
         "city": "Pune",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0003",
         "name": "Synthetic User 0003",
         "city": "Bengaluru",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0004",
         "name": "Synthetic User 0004",
         "city": "Jaipur",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0005",
         "name": "Synthetic User 0005",
         "city": "Mohali",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0006",
         "name": "Synthetic User 0006",
         "city": "Delhi",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0007",
         "name": "Synthetic User 0007",
         "city": "Pune",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0008",
         "name": "Synthetic User 0008",
         "city": "Bengaluru",
-        "records": 5
+        "records": 4
       },
       {
         "subject_id": "subject-0009",
         "name": "Synthetic User 0009",
         "city": "Jaipur",
-        "records": 5
+        "records": 4
       }
     ],
     "preview": [
@@ -134,16 +134,6 @@
         "canary": 634966
       },
       {
-        "record_id": "subject-0000-record-04",
-        "subject_id": "subject-0000",
-        "name": "Synthetic User 0000",
-        "email": "user0000@example.test",
-        "phone": "+91-90000-0000",
-        "city": "Mohali",
-        "text": "Synthetic profile 0000; record variant 4; seed 20260925.",
-        "canary": 222963
-      },
-      {
         "record_id": "subject-0001-record-00",
         "subject_id": "subject-0001",
         "name": "Synthetic User 0001",
@@ -151,7 +141,7 @@
         "phone": "+91-90000-0001",
         "city": "Delhi",
         "text": "Synthetic profile 0001; record variant 0; seed 20260925.",
-        "canary": 552644
+        "canary": 222963
       },
       {
         "record_id": "subject-0001-record-01",
@@ -161,7 +151,7 @@
         "phone": "+91-90000-0001",
         "city": "Delhi",
         "text": "Synthetic profile 0001; record variant 1; seed 20260925.",
-        "canary": 693638
+        "canary": 552644
       },
       {
         "record_id": "subject-0001-record-02",
@@ -171,7 +161,7 @@
         "phone": "+91-90000-0001",
         "city": "Delhi",
         "text": "Synthetic profile 0001; record variant 2; seed 20260925.",
-        "canary": 877081
+        "canary": 693638
       },
       {
         "record_id": "subject-0001-record-03",
@@ -181,17 +171,7 @@
         "phone": "+91-90000-0001",
         "city": "Delhi",
         "text": "Synthetic profile 0001; record variant 3; seed 20260925.",
-        "canary": 935348
-      },
-      {
-        "record_id": "subject-0001-record-04",
-        "subject_id": "subject-0001",
-        "name": "Synthetic User 0001",
-        "email": "user0001@example.test",
-        "phone": "+91-90000-0001",
-        "city": "Delhi",
-        "text": "Synthetic profile 0001; record variant 4; seed 20260925.",
-        "canary": 795598
+        "canary": 877081
       },
       {
         "record_id": "subject-0002-record-00",
@@ -201,7 +181,7 @@
         "phone": "+91-90000-0002",
         "city": "Pune",
         "text": "Synthetic profile 0002; record variant 0; seed 20260925.",
-        "canary": 743202
+        "canary": 935348
       },
       {
         "record_id": "subject-0002-record-01",
@@ -211,6 +191,26 @@
         "phone": "+91-90000-0002",
         "city": "Pune",
         "text": "Synthetic profile 0002; record variant 1; seed 20260925.",
+        "canary": 795598
+      },
+      {
+        "record_id": "subject-0002-record-02",
+        "subject_id": "subject-0002",
+        "name": "Synthetic User 0002",
+        "email": "user0002@example.test",
+        "phone": "+91-90000-0002",
+        "city": "Pune",
+        "text": "Synthetic profile 0002; record variant 2; seed 20260925.",
+        "canary": 743202
+      },
+      {
+        "record_id": "subject-0002-record-03",
+        "subject_id": "subject-0002",
+        "name": "Synthetic User 0002",
+        "email": "user0002@example.test",
+        "phone": "+91-90000-0002",
+        "city": "Pune",
+        "text": "Synthetic profile 0002; record variant 3; seed 20260925.",
         "canary": 346202
       }
     ]
@@ -227,7 +227,7 @@
           "model": 0.0
         },
         "dfi": 0.0,
-        "grade": "E - Non-compliant",
+        "grade": "F - Non-Compliant",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -235,31 +235,31 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:41.287674+00:00",
+        "measured_at": "2026-11-20T18:26:06.013312+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
-            "residual": 150,
-            "original": 150,
+            "residual": 120,
+            "original": 120,
             "per_copy": {
-              "copy-1": 50,
-              "copy-2": 50,
-              "copy-3": 50
+              "copy-1": 40,
+              "copy-2": 40,
+              "copy-3": 40
             },
             "fuzzy_threshold": 0.92
           },
           "database": {
-            "residual": 200,
-            "original": 200,
+            "residual": 160,
+            "original": 160,
             "per_store": {
-              "copy-1": 50,
-              "copy-2": 50,
-              "copy-3": 50,
-              "copy-4": 50
+              "copy-1": 40,
+              "copy-2": 40,
+              "copy-3": 40,
+              "copy-4": 40
             },
             "fuzzy_threshold": 0.92
           },
@@ -440,7 +440,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "977899874db3a45a718011eac819c6a2c1a1bc63cfe48f7160040ce34d118d27"
+        "report_hash": "47c6d67ca49e2ecf1ab691ae07cc4b0f632c9cfd3cc9ec6311db549ba9350cfc"
       },
       "presentation_report": {
         "strategy": "no_action",
@@ -451,7 +451,7 @@
           "model": 9.999999999999998
         },
         "dfi": 2.9999999999999996,
-        "grade": "E - Non-compliant",
+        "grade": "F - Non-Compliant",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -459,19 +459,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.651844+00:00",
+        "measured_at": "2026-11-20T18:26:05.301908+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.4
         },
         "previous_hash": null,
-        "report_hash": "19e872dbf3e34541fe0151954d1ef9efd5478c221990e186bef50203221118dd"
+        "report_hash": "0a19323ca7d54f08f1382d8293f55b23ce278af54cd31d51293d9ecc937a9059"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -493,22 +493,22 @@
         "subject_evidence": {
           "subject-0000": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -535,22 +535,22 @@
           },
           "subject-0001": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -577,22 +577,22 @@
           },
           "subject-0002": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -619,22 +619,22 @@
           },
           "subject-0003": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -661,22 +661,22 @@
           },
           "subject-0004": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -703,22 +703,22 @@
           },
           "subject-0005": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -745,22 +745,22 @@
           },
           "subject-0006": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -787,22 +787,22 @@
           },
           "subject-0007": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -829,22 +829,22 @@
           },
           "subject-0008": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -871,22 +871,22 @@
           },
           "subject-0009": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
-              "residual": 20,
-              "original": 20,
+              "residual": 16,
+              "original": 16,
               "per_store": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5,
-                "copy-4": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4,
+                "copy-4": 4
               }
             },
             "vector": {
@@ -912,7 +912,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     },
     {
@@ -926,7 +926,7 @@
           "model": 0.0
         },
         "dfi": 20.0,
-        "grade": "E - Non-compliant",
+        "grade": "F - Non-Compliant",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -934,26 +934,26 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:43.012038+00:00",
+        "measured_at": "2026-11-20T18:26:06.732904+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
-            "residual": 150,
-            "original": 150,
+            "residual": 120,
+            "original": 120,
             "per_copy": {
-              "copy-1": 50,
-              "copy-2": 50,
-              "copy-3": 50
+              "copy-1": 40,
+              "copy-2": 40,
+              "copy-3": 40
             },
             "fuzzy_threshold": 0.92
           },
           "database": {
             "residual": 0,
-            "original": 200,
+            "original": 160,
             "per_store": {
               "copy-1": 0,
               "copy-2": 0,
@@ -1139,7 +1139,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "2a164373585705e4526120a4733b49d38eae4555b31610e767c700b8be7e434f"
+        "report_hash": "9ad868aeea1e50d41a0cff85bb34c23db4ca257615cba5fe0d3ce8d1db8d986a"
       },
       "presentation_report": {
         "strategy": "database_only",
@@ -1150,7 +1150,7 @@
           "model": 32.49999999999999
         },
         "dfi": 43.75,
-        "grade": "D - Weak erasure",
+        "grade": "D - Weak Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -1158,19 +1158,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.652310+00:00",
+        "measured_at": "2026-11-20T18:26:05.302066+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.3
         },
         "previous_hash": null,
-        "report_hash": "3dbc2307699696f29c27a2f8965ff352b3cfe4724509c5b6db52a98cfabaf473"
+        "report_hash": "2bc83af497063a0696426df22ef09af88962e10b05ca24442ae34f263eec8d23"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -1193,17 +1193,17 @@
         "subject_evidence": {
           "subject-0000": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1235,17 +1235,17 @@
           },
           "subject-0001": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1277,17 +1277,17 @@
           },
           "subject-0002": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1319,17 +1319,17 @@
           },
           "subject-0003": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1361,17 +1361,17 @@
           },
           "subject-0004": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1403,17 +1403,17 @@
           },
           "subject-0005": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1445,17 +1445,17 @@
           },
           "subject-0006": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1487,17 +1487,17 @@
           },
           "subject-0007": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1529,17 +1529,17 @@
           },
           "subject-0008": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1571,17 +1571,17 @@
           },
           "subject-0009": {
             "dataset": {
-              "residual": 15,
-              "original": 15,
+              "residual": 12,
+              "original": 12,
               "per_copy": {
-                "copy-1": 5,
-                "copy-2": 5,
-                "copy-3": 5
+                "copy-1": 4,
+                "copy-2": 4,
+                "copy-3": 4
               }
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1612,7 +1612,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     },
     {
@@ -1626,7 +1626,7 @@
           "model": 60.0
         },
         "dfi": 58.0,
-        "grade": "C - Partial erasure",
+        "grade": "C - Partial Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -1634,16 +1634,16 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:44.330788+00:00",
+        "measured_at": "2026-11-20T18:26:07.438158+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
             "residual": 0,
-            "original": 150,
+            "original": 120,
             "per_copy": {
               "copy-1": 0,
               "copy-2": 0,
@@ -1653,7 +1653,7 @@
           },
           "database": {
             "residual": 0,
-            "original": 200,
+            "original": 160,
             "per_store": {
               "copy-1": 0,
               "copy-2": 0,
@@ -1839,7 +1839,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "d864945a3bb88068cb15f96c7fc20ecd4e97de881832ed77bec5693c75df2221"
+        "report_hash": "55f59114cf9bc140e32b7c023341103c028f9363e99ad14c7b002afda1e3d266"
       },
       "presentation_report": {
         "strategy": "approximate_unlearning",
@@ -1850,7 +1850,7 @@
           "model": 57.00000000000001
         },
         "dfi": 60.7,
-        "grade": "C - Partial erasure",
+        "grade": "C - Partial Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -1858,19 +1858,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.652402+00:00",
+        "measured_at": "2026-11-20T18:26:05.302141+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.18
         },
         "previous_hash": null,
-        "report_hash": "9859a573a5b5ca9f0ed468fc94f98d3b959814c38acbb6d3da29e0ef3d8cb32b"
+        "report_hash": "294c5f5694a85a23f668f19e7bd6ddb20ca7cc385f2fd0b9b9f3db3af78531be"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -1895,7 +1895,7 @@
           "subject-0000": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1904,7 +1904,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1937,7 +1937,7 @@
           "subject-0001": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1946,7 +1946,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1979,7 +1979,7 @@
           "subject-0002": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -1988,7 +1988,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2021,7 +2021,7 @@
           "subject-0003": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2030,7 +2030,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2063,7 +2063,7 @@
           "subject-0004": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2072,7 +2072,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2105,7 +2105,7 @@
           "subject-0005": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2114,7 +2114,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2147,7 +2147,7 @@
           "subject-0006": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2156,7 +2156,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2189,7 +2189,7 @@
           "subject-0007": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2198,7 +2198,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2231,7 +2231,7 @@
           "subject-0008": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2240,7 +2240,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2273,7 +2273,7 @@
           "subject-0009": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2282,7 +2282,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2313,7 +2313,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     },
     {
@@ -2327,7 +2327,7 @@
           "model": 100.0
         },
         "dfi": 94.0,
-        "grade": "A - Near-complete erasure",
+        "grade": "A - Near-Complete Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -2335,16 +2335,16 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:51.425637+00:00",
+        "measured_at": "2026-11-20T18:26:10.048844+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
             "residual": 0,
-            "original": 150,
+            "original": 120,
             "per_copy": {
               "copy-1": 0,
               "copy-2": 0,
@@ -2354,7 +2354,7 @@
           },
           "database": {
             "residual": 0,
-            "original": 200,
+            "original": 160,
             "per_store": {
               "copy-1": 0,
               "copy-2": 0,
@@ -2371,7 +2371,7 @@
             "similarity_threshold": 0.8,
             "details": [
               {
-                "attributable_hits": 5,
+                "attributable_hits": 4,
                 "total_top_k_slots": 5,
                 "queries": 1,
                 "k": 5,
@@ -2379,19 +2379,19 @@
                 "details": [
                   {
                     "top_k": 5,
-                    "attributable_hits": 5,
+                    "attributable_hits": 4,
                     "similarities": [
                       1.0,
                       1.0,
                       1.0,
                       1.0,
-                      1.0
+                      0.0
                     ]
                   }
                 ]
               },
               {
-                "attributable_hits": 5,
+                "attributable_hits": 4,
                 "total_top_k_slots": 5,
                 "queries": 1,
                 "k": 5,
@@ -2399,19 +2399,19 @@
                 "details": [
                   {
                     "top_k": 5,
-                    "attributable_hits": 5,
+                    "attributable_hits": 4,
                     "similarities": [
                       1.0,
                       1.0,
                       1.0,
                       1.0,
-                      1.0
+                      0.0
                     ]
                   }
                 ]
               },
               {
-                "attributable_hits": 0,
+                "attributable_hits": 2,
                 "total_top_k_slots": 5,
                 "queries": 1,
                 "k": 5,
@@ -2419,10 +2419,10 @@
                 "details": [
                   {
                     "top_k": 5,
-                    "attributable_hits": 0,
+                    "attributable_hits": 2,
                     "similarities": [
-                      0.0,
-                      0.0,
+                      1.0,
+                      1.0,
                       0.0,
                       0.0,
                       0.0
@@ -2580,7 +2580,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "2e2229fd19297d92cc3637cb7d7fc7b383c39c27ddb9fd141014baebfeee360a"
+        "report_hash": "a68c39a41c053723c99bfded23980541324c12c674e3aafca8e69d10e192b634"
       },
       "presentation_report": {
         "strategy": "sisa_exact_shard",
@@ -2591,7 +2591,7 @@
           "model": 77.5
         },
         "dfi": 79.15,
-        "grade": "B - Strong erasure",
+        "grade": "B - Substantial Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -2599,19 +2599,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.652457+00:00",
+        "measured_at": "2026-11-20T18:26:05.302190+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.1
         },
         "previous_hash": null,
-        "report_hash": "a800e2da0ff4177e129659ebd614e830560092400cdd7db9b60fa94ef9360c24"
+        "report_hash": "1a5ae485e57558560b2f1993f222985b83cb18a0539de1fb216ee17ef4646123"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -2636,7 +2636,7 @@
           "subject-0000": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2645,7 +2645,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2654,7 +2654,7 @@
               }
             },
             "vector": {
-              "attributable_hits": 5,
+              "attributable_hits": 4,
               "total_top_k_slots": 5,
               "queries": 1,
               "k": 5,
@@ -2662,13 +2662,13 @@
               "details": [
                 {
                   "top_k": 5,
-                  "attributable_hits": 5,
+                  "attributable_hits": 4,
                   "similarities": [
                     1.0,
                     1.0,
                     1.0,
                     1.0,
-                    1.0
+                    0.0
                   ]
                 }
               ]
@@ -2682,7 +2682,7 @@
           "subject-0001": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2691,7 +2691,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2700,7 +2700,7 @@
               }
             },
             "vector": {
-              "attributable_hits": 5,
+              "attributable_hits": 4,
               "total_top_k_slots": 5,
               "queries": 1,
               "k": 5,
@@ -2708,13 +2708,13 @@
               "details": [
                 {
                   "top_k": 5,
-                  "attributable_hits": 5,
+                  "attributable_hits": 4,
                   "similarities": [
                     1.0,
                     1.0,
                     1.0,
                     1.0,
-                    1.0
+                    0.0
                   ]
                 }
               ]
@@ -2728,7 +2728,7 @@
           "subject-0002": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2737,7 +2737,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2746,7 +2746,7 @@
               }
             },
             "vector": {
-              "attributable_hits": 0,
+              "attributable_hits": 2,
               "total_top_k_slots": 5,
               "queries": 1,
               "k": 5,
@@ -2754,10 +2754,10 @@
               "details": [
                 {
                   "top_k": 5,
-                  "attributable_hits": 0,
+                  "attributable_hits": 2,
                   "similarities": [
-                    0.0,
-                    0.0,
+                    1.0,
+                    1.0,
                     0.0,
                     0.0,
                     0.0
@@ -2774,7 +2774,7 @@
           "subject-0003": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2783,7 +2783,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2820,7 +2820,7 @@
           "subject-0004": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2829,7 +2829,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2866,7 +2866,7 @@
           "subject-0005": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2875,7 +2875,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2912,7 +2912,7 @@
           "subject-0006": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2921,7 +2921,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2958,7 +2958,7 @@
           "subject-0007": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -2967,7 +2967,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3004,7 +3004,7 @@
           "subject-0008": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3013,7 +3013,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3050,7 +3050,7 @@
           "subject-0009": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3059,7 +3059,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3094,7 +3094,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     },
     {
@@ -3108,7 +3108,7 @@
           "model": 100.0
         },
         "dfi": 100.0,
-        "grade": "A - Near-complete erasure",
+        "grade": "A - Near-Complete Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -3116,16 +3116,16 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:52.769160+00:00",
+        "measured_at": "2026-11-20T18:26:10.701039+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
             "residual": 0,
-            "original": 150,
+            "original": 120,
             "per_copy": {
               "copy-1": 0,
               "copy-2": 0,
@@ -3135,7 +3135,7 @@
           },
           "database": {
             "residual": 0,
-            "original": 200,
+            "original": 160,
             "per_store": {
               "copy-1": 0,
               "copy-2": 0,
@@ -3321,7 +3321,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "37c8e8f715e565382ba570df45b55e29a6a063851202bc5e8cfeccad5e0df6a3"
+        "report_hash": "3d164ce3750165d5a68ccefa339411efee63173d64fb570c2319394f9a6d9942"
       },
       "presentation_report": {
         "strategy": "certified_removal",
@@ -3332,7 +3332,7 @@
           "model": 86.5
         },
         "dfi": 89.65,
-        "grade": "A - Near-complete erasure",
+        "grade": "A - Near-Complete Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -3340,19 +3340,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.652502+00:00",
+        "measured_at": "2026-11-20T18:26:05.302233+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.06
         },
         "previous_hash": null,
-        "report_hash": "416a87434923262c331f53d4086463a64423e2a31fda63a85669102696b367f0"
+        "report_hash": "5326e9044ca8d53277bcbc114024d378d71741eb1e63c09763a1c4bf7e1493e8"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -3377,7 +3377,7 @@
           "subject-0000": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3386,7 +3386,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3419,7 +3419,7 @@
           "subject-0001": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3428,7 +3428,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3461,7 +3461,7 @@
           "subject-0002": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3470,7 +3470,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3503,7 +3503,7 @@
           "subject-0003": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3512,7 +3512,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3545,7 +3545,7 @@
           "subject-0004": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3554,7 +3554,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3587,7 +3587,7 @@
           "subject-0005": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3596,7 +3596,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3629,7 +3629,7 @@
           "subject-0006": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3638,7 +3638,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3671,7 +3671,7 @@
           "subject-0007": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3680,7 +3680,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3713,7 +3713,7 @@
           "subject-0008": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3722,7 +3722,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3755,7 +3755,7 @@
           "subject-0009": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3764,7 +3764,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -3795,7 +3795,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     },
     {
@@ -3809,7 +3809,7 @@
           "model": 100.0
         },
         "dfi": 100.0,
-        "grade": "A - Near-complete erasure",
+        "grade": "A - Near-Complete Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -3817,16 +3817,16 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:54.315364+00:00",
+        "measured_at": "2026-11-20T18:26:11.355235+00:00",
         "scope": {
           "subjects": 10,
-          "records": 5000,
+          "records": 2000,
           "synthetic": true
         },
         "raw_signals": {
           "dataset": {
             "residual": 0,
-            "original": 150,
+            "original": 120,
             "per_copy": {
               "copy-1": 0,
               "copy-2": 0,
@@ -3836,7 +3836,7 @@
           },
           "database": {
             "residual": 0,
-            "original": 200,
+            "original": 160,
             "per_store": {
               "copy-1": 0,
               "copy-2": 0,
@@ -4022,7 +4022,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "28b41c21ab49c7125634fe8e5705ff083156acc7efe2a836545b298f55c0f156"
+        "report_hash": "e35855ba8568602f86f40e412924cc2264e4209bb5cfd92b517e8623a761f089"
       },
       "presentation_report": {
         "strategy": "sisa_plus_vector_purge",
@@ -4033,7 +4033,7 @@
           "model": 94.5
         },
         "dfi": 95.25,
-        "grade": "A - Near-complete erasure",
+        "grade": "A - Near-Complete Erasure",
         "weights": {
           "dataset": 0.2,
           "database": 0.2,
@@ -4041,19 +4041,19 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-10-08T19:54:39.652546+00:00",
+        "measured_at": "2026-11-20T18:26:05.302321+00:00",
         "scope": {},
         "raw_signals": {
           "synthetic": true,
           "residual_mia_advantage": 0.03
         },
         "previous_hash": null,
-        "report_hash": "81df6ee1fe8f1061a56fc6b04dd86a537a181fd7631a039c5ff73fdc564c884d"
+        "report_hash": "e12df29b39af74520c4f472420834a39a7a181625ca746b287beb1c8d3eec53a"
       },
       "evidence": {
-        "target_records": 50,
-        "original_dataset_count": 150,
-        "original_database_count": 200,
+        "target_records": 40,
+        "original_dataset_count": 120,
+        "original_database_count": 160,
         "selected_subjects": [
           "subject-0000",
           "subject-0001",
@@ -4078,7 +4078,7 @@
           "subject-0000": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4087,7 +4087,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4120,7 +4120,7 @@
           "subject-0001": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4129,7 +4129,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4162,7 +4162,7 @@
           "subject-0002": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4171,7 +4171,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4204,7 +4204,7 @@
           "subject-0003": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4213,7 +4213,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4246,7 +4246,7 @@
           "subject-0004": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4255,7 +4255,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4288,7 +4288,7 @@
           "subject-0005": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4297,7 +4297,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4330,7 +4330,7 @@
           "subject-0006": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4339,7 +4339,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4372,7 +4372,7 @@
           "subject-0007": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4381,7 +4381,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4414,7 +4414,7 @@
           "subject-0008": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4423,7 +4423,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4456,7 +4456,7 @@
           "subject-0009": {
             "dataset": {
               "residual": 0,
-              "original": 15,
+              "original": 12,
               "per_copy": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4465,7 +4465,7 @@
             },
             "database": {
               "residual": 0,
-              "original": 20,
+              "original": 16,
               "per_store": {
                 "copy-1": 0,
                 "copy-2": 0,
@@ -4496,7 +4496,7 @@
             }
           }
         },
-        "dataset_hash": "85b495beb9159ce3e5f9569542f47f2053f49f403a18919df437ab59002234dd"
+        "dataset_hash": "154be626d282f35561f8501fba12eed6d24c27fc02cbaf45727d5786967a25c0"
       }
     }
   ]

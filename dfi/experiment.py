@@ -1,6 +1,7 @@
 """End-to-end synthetic DFI experiment using executable erasure strategies."""
 
 from dataclasses import dataclass
+import datetime
 import hashlib
 import json
 from pathlib import Path
@@ -114,7 +115,7 @@ def export_web_snapshot(output_path: str | Path, dataset: SyntheticDataset | Non
     for subject in dataset.erased_subjects:
         row = next(record for record in dataset.records if record["subject_id"] == subject)
         selector_subjects.append({"subject_id": subject, "name": row["name"], "city": row["city"], "records": dataset.records_per_subject})
-    snapshot = {"generated_at": "2026-10-09", "dataset": {
+    snapshot = {"generated_at": datetime.date.today().isoformat(), "dataset": {
         "creator": dataset.creator, "subjects": dataset.subject_count, "records": len(dataset.records), "records_per_subject": dataset.records_per_subject,
         "erased_subjects": len(dataset.erased_subjects), "fields": list(dataset.records[0]), "seed": 20260925,
         "note": "Synthetic, deterministic, privacy-safe data. No real personal data is included and no LLM was used for this generated run.",

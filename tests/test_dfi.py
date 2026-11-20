@@ -9,6 +9,12 @@ from dfi.experiment import run_experiment
 
 class TestDFI(unittest.TestCase):
   def test_paper_worked_example(self):
+    # Table III worked example: SISA + Vector Purge
+    report = compute_dfi(LayerScores(97, 95, 95, 94.5))
+    self.assertTrue(math.isclose(report.dfi, 95.25))
+    self.assertTrue(report.grade.startswith("A"))
+
+  def test_paper_illustrative_example_91(self):
     report = compute_dfi(LayerScores(97, 95, 88, 87))
     # Exact weighted sum is 90.9; the paper reports 91.0 after rounding.
     self.assertTrue(math.isclose(report.dfi, 90.9))
@@ -40,8 +46,8 @@ class TestDFI(unittest.TestCase):
 
   def test_proposed_synthetic_dataset_size(self):
     dataset = generate_dataset()
-    self.assertEqual(dataset.subject_count, 1000)
-    self.assertEqual(len(dataset.records), 5000)
+    self.assertEqual(dataset.subject_count, 500)
+    self.assertEqual(len(dataset.records), 2000)
     self.assertEqual(len(dataset.erased_subjects), 10)
 
   def test_end_to_end_synthetic_experiment_uses_probe_evidence(self):

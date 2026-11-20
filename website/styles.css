@@ -113,3 +113,178 @@ h1 em, h2 em { color: var(--mint); font-style: normal; }
 @media (max-width: 920px) { .evidence-bottom, .data-grid { grid-template-columns: 1fr; }.detail-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 920px) { .subject-selector { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .detail-head { display: block; }.detail-target { display: block; text-align: left; margin-top: 10px; }.detail-grid { grid-template-columns: 1fr 1fr; }.parameter-row { display: block; line-height: 1.6; }.parameter-row .mono { display: block; }.subject-selector { grid-template-columns: 1fr; }.selection-note { display: block; line-height: 1.6; }.selection-note .mono { display: block; } }
+
+/* ==========================================================================
+   PAPER SPECIFICATION & PRESENTATION ENHANCEMENTS (2026 UPDATE)
+   ========================================================================== */
+
+.topbar-actions { display: flex; align-items: center; gap: 12px; }
+.cert-btn { cursor: pointer; background: rgba(196,242,63,.08); transition: .2s ease; }
+.cert-btn:hover { background: var(--mint); color: #11170d; border-color: var(--mint); }
+.button-accent { background: transparent; border-color: var(--coral); color: var(--coral); }
+.button-accent:hover { background: rgba(255,128,103,.12); color: #ff9b86; }
+.audit-actions-row { margin-top: 18px; display: flex; justify-content: flex-end; }
+
+/* Evidence Grid with Fig. 5 Scatter Plot */
+.evidence-grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 22px; }
+.scatter-container { width: 100%; height: 260px; display: flex; align-items: center; justify-content: center; }
+.scatter-svg { width: 100%; height: 100%; max-height: 260px; overflow: visible; }
+
+/* Paper Specification Styles */
+.paper-section { border-top: 1px solid var(--line); padding-top: 90px; }
+.paper-formula-box { background: rgba(16,24,22,.85); border: 1px solid var(--line-bright); border-left: 3px solid var(--mint); padding: 24px 28px; margin-bottom: 32px; }
+.paper-formula-box .math-display { font-family: var(--mono); font-size: clamp(14px, 1.8vw, 20px); color: var(--mint); margin: 14px 0 10px; word-break: break-word; }
+.paper-formula-box p { color: var(--muted); font-size: 13px; margin: 0; line-height: 1.5; }
+
+.paper-block { border: 1px solid var(--line); padding: 22px; margin-bottom: 26px; background: rgba(16,24,22,.4); }
+.table-responsive { overflow-x: auto; margin-top: 12px; }
+.paper-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+.paper-table th { background: rgba(196,242,63,.06); color: var(--mint); font: 500 10px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 12px 14px; border-bottom: 1px solid var(--line-bright); }
+.paper-table td { padding: 13px 14px; border-bottom: 1px solid var(--line); color: var(--muted); vertical-align: top; line-height: 1.45; }
+.paper-table tr:hover td { background: rgba(196,242,63,.02); }
+.paper-table code { background: rgba(196,242,63,.08); color: var(--mint); padding: 3px 6px; font-size: 11px; }
+.table-total-row td { border-top: 2px solid var(--line-bright); border-bottom: 0; background: rgba(196,242,63,.05); color: var(--ink); }
+
+/* Figure 3 Grading Bands Grid */
+.grades-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 16px; }
+.grade-card { border: 1px solid var(--line); padding: 16px 14px; background: var(--panel); display: flex; flex-direction: column; gap: 8px; transition: .2s ease; }
+.grade-card:hover { transform: translateY(-3px); }
+.grade-badge { width: 28px; height: 28px; display: grid; place-items: center; font: 700 12px var(--mono); }
+.grade-card strong { font-size: 15px; font-family: var(--mono); color: var(--ink); }
+.grade-card small { font: 500 9px var(--mono); letter-spacing: .06em; line-height: 1.25; }
+.grade-card p { font-size: 11px; color: var(--muted); line-height: 1.4; margin: 0; }
+
+.grade-a { border-color: rgba(196,242,63,.4); }
+.grade-a .grade-badge { background: var(--mint); color: #11170d; }
+.grade-a small { color: var(--mint); }
+
+.grade-b { border-color: rgba(119,185,255,.4); }
+.grade-b .grade-badge { background: var(--blue); color: #0d1624; }
+.grade-b small { color: var(--blue); }
+
+.grade-c { border-color: rgba(255,200,80,.4); }
+.grade-c .grade-badge { background: #ffc850; color: #221800; }
+.grade-c small { color: #ffc850; }
+
+.grade-d { border-color: rgba(255,150,100,.4); }
+.grade-d .grade-badge { background: #ff9664; color: #221008; }
+.grade-d small { color: #ff9664; }
+
+.grade-f { border-color: rgba(255,128,103,.5); }
+.grade-f .grade-badge { background: var(--coral); color: #220b07; }
+.grade-f small { color: var(--coral); }
+
+/* Paper Two Column Box */
+.paper-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 26px; }
+.paper-col-box { border: 1px solid var(--line); padding: 22px; background: rgba(16,24,22,.4); }
+.paper-checklist { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; }
+.paper-checklist li { font-size: 12px; color: var(--muted); line-height: 1.5; padding-left: 18px; position: relative; }
+.paper-checklist li::before { content: "▪"; color: var(--mint); position: absolute; left: 0; font-size: 14px; }
+.paper-checklist li strong { color: var(--ink); }
+
+/* Author Card */
+.author-card { border: 1px solid var(--line-bright); background: var(--panel); padding: 22px 26px; margin-top: 10px; }
+.author-list { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 14px; }
+.author-list div strong { display: block; color: var(--ink); font-size: 14px; }
+.author-list div small { color: var(--mint); font-family: var(--mono); font-size: 11px; }
+
+/* Governance Section */
+.gov-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gov-card { border: 1px solid var(--line); background: var(--panel); padding: 24px; position: relative; }
+.gov-tag { font: 500 9px var(--mono); color: var(--coral); letter-spacing: .08em; display: inline-block; margin-bottom: 12px; }
+.gov-card h3 { font-size: 18px; margin: 0 0 10px; color: var(--ink); }
+.gov-card p { font-size: 13px; color: var(--muted); line-height: 1.5; margin: 0; }
+
+/* ==========================================================================
+   AUDIT CERTIFICATE MODAL STYLES
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(7,11,10,.85); backdrop-filter: blur(8px);
+  display: none; place-items: center; padding: 20px; overflow-y: auto;
+}
+.cert-modal-box {
+  background: #0f1614; border: 1px solid var(--mint);
+  max-width: 780px; width: 100%; box-shadow: 0 24px 80px rgba(0,0,0,.6);
+  position: relative; animation: rise .3s ease both;
+}
+.cert-modal-header {
+  padding: 20px 26px; border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.cert-close-btn {
+  background: transparent; border: 0; color: var(--muted); font-size: 26px;
+  cursor: pointer; line-height: 1; padding: 0;
+}
+.cert-close-btn:hover { color: var(--coral); }
+.cert-modal-body { padding: 26px; }
+.cert-modal-footer {
+  padding: 18px 26px; border-top: 1px solid var(--line);
+  display: flex; justify-content: flex-end; gap: 12px; background: rgba(16,24,22,.5);
+}
+
+.cert-card-print { position: relative; }
+.cert-watermark {
+  position: absolute; right: 10px; top: 30px; font: 700 48px var(--mono);
+  color: rgba(196,242,63,.03); transform: rotate(-15deg); pointer-events: none;
+}
+.cert-top-info { display: flex; justify-content: space-between; border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 20px; }
+
+.cert-hero-score {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  background: rgba(196,242,63,.03); border: 1px solid var(--line-bright);
+  padding: 20px; margin-bottom: 20px; align-items: center;
+}
+.cert-big-score { font-size: 52px; font-weight: 700; color: var(--mint); line-height: 1.1; margin: 6px 0; }
+.cert-grade-pill {
+  display: inline-block; padding: 4px 10px; font: 600 10px var(--mono);
+  letter-spacing: .06em; background: var(--mint); color: #11170d;
+}
+.cert-grade-pill.grade-b { background: var(--blue); color: #070b10; }
+.cert-grade-pill.grade-c { background: #ffc850; color: #221800; }
+.cert-grade-pill.grade-d { background: #ff9664; color: #221008; }
+.cert-grade-pill.grade-f { background: var(--coral); color: #220b07; }
+
+.cert-meta-box { font-size: 12px; color: var(--muted); line-height: 1.8; }
+.cert-meta-box strong { color: var(--ink); }
+
+.cert-table-title { font: 500 10px var(--mono); color: var(--dim); letter-spacing: .08em; margin-bottom: 8px; }
+.cert-table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 20px; }
+.cert-table th { background: rgba(196,242,63,.06); color: var(--mint); padding: 8px 10px; text-align: left; font: 500 9px var(--mono); border-bottom: 1px solid var(--line); }
+.cert-table td { padding: 9px 10px; border-bottom: 1px solid var(--line); color: var(--muted); }
+.cert-table td strong { color: var(--ink); }
+
+.cert-reg-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 20px; }
+.cert-reg-item { border: 1px solid var(--line); padding: 10px; background: rgba(16,24,22,.6); text-align: center; }
+.cert-reg-item strong { display: block; font-size: 11px; color: var(--ink); margin-bottom: 4px; }
+.cert-reg-item span { font: 500 9px var(--mono); color: var(--mint); }
+
+.cert-hash-box { border: 1px dashed var(--line-bright); padding: 12px 14px; background: #0b1110; word-break: break-all; }
+.cert-hash-str { color: var(--mint); font-size: 11px; display: block; margin-top: 4px; }
+
+/* Responsive adjustments */
+@media (max-width: 920px) {
+  .evidence-grid-two { grid-template-columns: 1fr; }
+  .grades-grid { grid-template-columns: repeat(2, 1fr); }
+  .paper-two-col { grid-template-columns: 1fr; }
+  .gov-grid { grid-template-columns: 1fr; }
+  .cert-hero-score { grid-template-columns: 1fr; }
+  .cert-reg-strip { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .grades-grid { grid-template-columns: 1fr; }
+  .paper-formula-box .math-display { font-size: 14px; }
+}
+
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  .topbar, .hero, .thesis-strip, .flow-section, .audit-section, .data-section, .evidence-section, .paper-section, .governance-section, .panel-section, .footer, .cert-modal-footer, .cert-close-btn { display: none !important; }
+  .modal-backdrop { position: static !important; background: transparent !important; padding: 0 !important; display: block !important; }
+  .cert-modal-box { border: 2px solid #000 !important; max-width: 100% !important; box-shadow: none !important; color: #000 !important; background: #fff !important; }
+  .cert-big-score { color: #000 !important; }
+  .cert-grade-pill { background: #eee !important; color: #000 !important; border: 1px solid #000 !important; }
+  .cert-table th { background: #eee !important; color: #000 !important; }
+  .cert-table td { color: #222 !important; border-color: #ccc !important; }
+  .cert-hash-str { color: #000 !important; }
+}

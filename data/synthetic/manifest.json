@@ -1,7 +1,7 @@
 {
-  "subjects": 1000,
-  "records": 5000,
-  "records_per_subject": 5,
+  "subjects": 500,
+  "records": 2000,
+  "records_per_subject": 4,
   "erased_subjects": 10,
   "synthetic": true,
   "privacy_note": "All values are generated; no real personal data is included.",
