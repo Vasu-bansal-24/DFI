@@ -48,7 +48,7 @@ class TestDFI(unittest.TestCase):
     dataset = generate_dataset()
     self.assertEqual(dataset.subject_count, 500)
     self.assertEqual(len(dataset.records), 2000)
-    self.assertEqual(len(dataset.erased_subjects), 10)
+    self.assertEqual(len(dataset.erased_subjects), 30)
 
   def test_end_to_end_synthetic_experiment_uses_probe_evidence(self):
     dataset = generate_dataset(subjects=100, records_per_subject=5, erased_subjects=10)

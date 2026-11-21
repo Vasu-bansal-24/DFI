@@ -66,7 +66,7 @@ In accordance with Section IV-G of the paper, the benchmark is validated on a pr
 | Subjects | 500 | Section IV-G |
 | Documents / Records per subject | 4 | Section IV-G |
 | Total documents | 2,000 | Section IV-G |
-| Erased subjects (forget set) | 10 | Section IV-G |
+| Erased subjects (canonical / pool) | 10 default cohort / 30 candidate targets | Section IV-G |
 | Dataset copies scanned | 3 | Section IV-C.1 |
 | Database stores scanned | 4 | Section IV-C.2 |
 | Vector similarity threshold ($\tau$) | 0.80 | Section IV-C.3 |

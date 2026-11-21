@@ -2,7 +2,7 @@
   "subjects": 500,
   "records": 2000,
   "records_per_subject": 4,
-  "erased_subjects": 10,
+  "erased_subjects": 30,
   "synthetic": true,
   "privacy_note": "All values are generated; no real personal data is included.",
   "creator": "Deterministic Python generator (no LLM used)",

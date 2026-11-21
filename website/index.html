@@ -43,7 +43,7 @@
             <a class="button button-ghost" href="#paper">Read Paper Spec</a>
             <button class="button button-accent" id="heroCertBtn">View Audit Certificate ↗</button>
           </div>
-          <div class="hero-footnote"><span class="mono">CANARY BENCHMARK (SEC. IV-G)</span><span class="dot"></span> 500 subjects · 2,000 documents · 10 forget targets</div>
+          <div class="hero-footnote"><span class="mono">CANARY BENCHMARK (SEC. IV-G)</span><span class="dot"></span> 500 subjects · 2,000 documents · 30 candidate targets</div>
         </div>
         <div class="hero-score reveal reveal-delay">
           <div class="score-orbit orbit-one"></div>
@@ -95,7 +95,7 @@
       <section class="audit-section content-section" id="audit">
         <div class="section-heading audit-heading">
           <div><p class="eyebrow"><span class="eyebrow-line"></span> Interactive Audit Console</p><h2>Select an Erasure Strategy.<br /><em>Observe Residue Shift.</em></h2></div>
-          <div class="dataset-chip"><span class="chip-icon">◌</span><div><strong>CANARY DATASET (SEC. IV-G)</strong><small>500 subjects / 2,000 documents / 10 targets</small></div></div>
+          <div class="dataset-chip"><span class="chip-icon">◌</span><div><strong>CANARY DATASET (SEC. IV-G)</strong><small>500 subjects / 2,000 documents / 30 targets</small></div></div>
         </div>
         <div class="audit-console">
           <div class="strategy-panel">
@@ -138,7 +138,8 @@
           <div class="card-title-row"><span class="panel-kicker">CUSTOM FORGET SET SELECTION</span><span class="mono" id="selectionCount">10 SELECTED</span></div>
           <p>Select or deselect subjects from the forget set. All 4 probes immediately re-execute against the filtered cohort, dynamically recalculating raw residue counts and the composite DFI.</p>
           <div class="selection-actions">
-            <button class="small-button" id="selectAll">SELECT ALL (10)</button>
+            <button class="small-button" id="selectAll">SELECT ALL (30)</button>
+            <button class="small-button" id="selectDefaultCohort">DEFAULT COHORT (10)</button>
             <button class="small-button" id="selectSingle">SINGLE TARGET (subject-0000)</button>
             <button class="small-button" id="clearSelection">CLEAR</button>
           </div>
@@ -151,7 +152,7 @@
             <div class="data-table-wrap" id="dataPreview"></div>
           </div>
           <div class="forget-card">
-            <div class="card-title-row"><span class="panel-kicker">ACTIVE FORGET SET</span><span class="mono" id="forgetCount">10 SUBJECTS</span></div>
+            <div class="card-title-row"><span class="panel-kicker">ACTIVE FORGET SET</span><span class="mono" id="forgetCount">10 SELECTED / 30 AVAILABLE</span></div>
             <p>Target subjects undergoing verification. Probes measure whether traces of these individuals survive post-erasure.</p>
             <div class="forget-list" id="forgetList"></div>
             <div class="creator-note" id="creatorNote"></div>

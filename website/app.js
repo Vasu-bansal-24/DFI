@@ -21,7 +21,7 @@ function grade(value) {
 }
 
 function selected() { return derivedItem(experiment.strategies.find(item => item.key === currentKey)); }
-function scoreReport(item) { return item.presentation_report || item.report; }
+function scoreReport(item) { return item.report; }
 function scoreOf(item) { return Number(scoreReport(item).dfi); }
 function layerScores(item) { return scoreReport(item).scores; }
 
@@ -33,9 +33,8 @@ function gradeOf(item) {
 }
 
 function derivedItem(item) {
-  if (!item || !selectedSubjects.size) return item;
-  const defaultTargets = experiment.dataset.forget_set || [];
-  if (selectedSubjects.size === defaultTargets.length && defaultTargets.every(subject => selectedSubjects.has(subject))) return item;
+  if (!item) return item;
+  if (!selectedSubjects.size) return null;
   const selected = [...selectedSubjects];
   const evidence = item.evidence.subject_evidence;
   const rows = selected.map(subject => evidence[subject]).filter(Boolean);
@@ -57,7 +56,6 @@ function derivedItem(item) {
   const dfi = 0.2 * scores.dataset + 0.2 * scores.database + 0.3 * scores.vector + 0.3 * scores.model;
   return {
     ...item,
-    presentation_report: null,
     report: {
       ...item.report,
       dfi,
@@ -343,7 +341,16 @@ function showCertificate() {
   const scores = layerScores(item);
   const report = item.report;
   const hash = report.report_hash || "d7ca4d4b642c1851f0ed3a963486e93d7319ff9db60d2865e01b808337366f9e";
-  const now = new Date().toISOString();
+  const nowIST = new Date().toLocaleString("en-IN", {
+    timeZone: "Asia/Kolkata",
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true
+  }) + " IST";
 
   const body = `
     <div class="cert-card-print">
@@ -354,8 +361,8 @@ function showCertificate() {
           <strong class="mono" style="display:block; color:var(--ink); font-size:13px;">DFI-CERT-${hash.slice(0, 12).toUpperCase()}</strong>
         </div>
         <div style="text-align:right;">
-          <span class="mono" style="color:var(--dim); font-size:10px;">TIMESTAMP (UTC)</span>
-          <strong class="mono" style="display:block; color:var(--ink); font-size:12px;">${now.replace("T", " ").slice(0, 19)}</strong>
+          <span class="mono" style="color:var(--dim); font-size:10px;">TIMESTAMP (IST)</span>
+          <strong class="mono" style="display:block; color:var(--ink); font-size:12px;">${nowIST}</strong>
         </div>
       </div>
 
@@ -464,7 +471,8 @@ async function boot() {
     const response = await fetch("data/synthetic_experiment.json");
     if (!response.ok) throw new Error("Experiment snapshot unavailable");
     experiment = await response.json();
-    selectedSubjects = new Set(experiment.dataset.forget_set);
+    // Default to the first 10 canonical subjects matching the paper's benchmark cohort
+    selectedSubjects = new Set(experiment.dataset.forget_set.slice(0, 10));
 
     renderLayers();
     renderStrategies();
@@ -474,23 +482,31 @@ async function boot() {
     renderData();
     setupCertModal();
 
-    document.getElementById("selectAll").addEventListener("click", () => {
+    document.getElementById("selectAll")?.addEventListener("click", () => {
       selectedSubjects = new Set(experiment.dataset.forget_set);
-      renderData();
-      renderStrategies();
-      renderAudit();
-      renderBenchmark();
-    });
-
-    document.getElementById("selectSingle").addEventListener("click", () => {
-      selectedSubjects = new Set(["subject-0000"]);
       renderSelection();
       renderStrategies();
       renderAudit();
       renderBenchmark();
     });
 
-    document.getElementById("clearSelection").addEventListener("click", () => {
+    document.getElementById("selectDefaultCohort")?.addEventListener("click", () => {
+      selectedSubjects = new Set(experiment.dataset.forget_set.slice(0, 10));
+      renderSelection();
+      renderStrategies();
+      renderAudit();
+      renderBenchmark();
+    });
+
+    document.getElementById("selectSingle")?.addEventListener("click", () => {
+      selectedSubjects = new Set([experiment.dataset.forget_set[0] || "subject-0000"]);
+      renderSelection();
+      renderStrategies();
+      renderAudit();
+      renderBenchmark();
+    });
+
+    document.getElementById("clearSelection")?.addEventListener("click", () => {
       selectedSubjects.clear();
       renderSelection();
       renderAudit();

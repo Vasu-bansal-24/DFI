@@ -10,7 +10,7 @@ from typing import Any
 
 DEFAULT_SUBJECTS = 500
 DEFAULT_RECORDS_PER_SUBJECT = 4
-DEFAULT_ERASED_SUBJECTS = 10
+DEFAULT_ERASED_SUBJECTS = 30
 DATASET_CREATOR = "Deterministic Python generator (no LLM used)"
 
 
