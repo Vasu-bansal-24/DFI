@@ -132,9 +132,235 @@ h1 em, h2 em { color: var(--mint); font-style: normal; }
 
 /* Paper Specification Styles */
 .paper-section { border-top: 1px solid var(--line); padding-top: 90px; }
-.paper-formula-box { background: rgba(16,24,22,.85); border: 1px solid var(--line-bright); border-left: 3px solid var(--mint); padding: 24px 28px; margin-bottom: 32px; }
-.paper-formula-box .math-display { font-family: var(--mono); font-size: clamp(14px, 1.8vw, 20px); color: var(--mint); margin: 14px 0 10px; word-break: break-word; }
-.paper-formula-box p { color: var(--muted); font-size: 13px; margin: 0; line-height: 1.5; }
+.paper-formula-box {
+  background: rgba(16,24,22,.92);
+  border: 1px solid var(--line-bright);
+  border-left: 4px solid var(--mint);
+  padding: 26px 30px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.25);
+  position: relative;
+  overflow: hidden;
+}
+.paper-formula-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(196,242,63,.06), transparent 70%);
+  pointer-events: none;
+}
+.formula-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.formula-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.formula-canonical-badge {
+  font: 600 9px var(--mono);
+  letter-spacing: .12em;
+  padding: 3px 8px;
+  background: rgba(196,242,63,.1);
+  color: var(--mint);
+  border: 1px solid rgba(196,242,63,.25);
+  border-radius: 2px;
+}
+.copy-latex-btn {
+  background: transparent;
+  border: 1px solid var(--line-bright);
+  color: var(--muted);
+  font: 500 9px var(--mono);
+  letter-spacing: .1em;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.copy-latex-btn:hover {
+  background: rgba(196,242,63,.08);
+  border-color: var(--mint);
+  color: var(--mint);
+}
+.copy-latex-btn span {
+  font-size: 11px;
+}
+.paper-formula-box .math-display {
+  margin: 10px 0 22px;
+  overflow-x: auto;
+  padding: 8px 4px 12px;
+}
+.math-main-equation {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: clamp(16px, 2.1vw, 22px);
+  color: var(--ink);
+  line-height: 1.25;
+}
+.math-eq-part {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.math-func {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--mint);
+  letter-spacing: -.02em;
+}
+.math-var {
+  font-family: "Cambria Math", "Latin Modern Math", "STIX Two Math", "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
+  padding: 0 1px;
+}
+.math-paren {
+  font-family: var(--sans);
+  color: var(--dim);
+  font-weight: 400;
+}
+.math-sep {
+  color: var(--dim);
+  margin-right: 4px;
+}
+.math-op-equals {
+  font-family: var(--sans);
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 14px;
+  font-size: 1.1em;
+}
+.math-summation-term {
+  display: inline-flex;
+  align-items: center;
+}
+.math-sigma-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 6px;
+  position: relative;
+  top: -2px;
+}
+.math-sum-sign {
+  font-family: "Cambria Math", "Latin Modern Math", "STIX Two Math", "Georgia", "Times New Roman", serif;
+  font-size: 1.75em;
+  line-height: 0.85;
+  color: var(--mint);
+  font-weight: 400;
+}
+.math-sum-limits {
+  font-size: 0.44em;
+  line-height: 1;
+  color: var(--dim);
+  font-family: var(--mono);
+  margin-top: 3px;
+  letter-spacing: .02em;
+}
+.math-sub {
+  font-family: "Cambria Math", "Latin Modern Math", "STIX Two Math", "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 0.72em;
+  color: var(--muted);
+  vertical-align: sub;
+  margin-left: 1px;
+}
+.math-dot {
+  color: var(--dim);
+  margin: 0 5px;
+  font-weight: bold;
+}
+.math-plus {
+  color: var(--dim);
+  margin: 0 8px;
+  font-weight: 500;
+}
+.math-expansion-term {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.math-term-chip {
+  display: inline-flex;
+  align-items: baseline;
+  background: rgba(16,24,22,.9);
+  border: 1px solid var(--line-bright);
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 0.84em;
+  white-space: nowrap;
+  transition: all .2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.math-term-chip:hover {
+  border-color: var(--mint);
+  transform: translateY(-1px);
+}
+.math-term-chip.chip-d { border-left: 3px solid var(--mint); }
+.math-term-chip.chip-db { border-left: 3px solid var(--blue); }
+.math-term-chip.chip-v { border-left: 3px solid #a78bfa; }
+.math-term-chip.chip-m { border-left: 3px solid var(--coral); }
+.math-weight {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: #fff;
+}
+.math-layer-name {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 0.95em;
+}
+.math-term-chip.chip-d .math-layer-name { color: var(--mint); }
+.math-term-chip.chip-db .math-layer-name { color: var(--blue); }
+.math-term-chip.chip-v .math-layer-name { color: #a78bfa; }
+.math-term-chip.chip-m .math-layer-name { color: var(--coral); }
+
+.formula-breakdown-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.formula-chip {
+  background: rgba(11,17,16,.6);
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  border-radius: 3px;
+}
+.chip-label {
+  display: block;
+  font: 500 9px var(--mono);
+  letter-spacing: .1em;
+  color: var(--dim);
+  margin-bottom: 5px;
+}
+.chip-content {
+  display: block;
+  font: 11px var(--mono);
+  color: var(--muted);
+  line-height: 1.4;
+}
+.chip-content code {
+  color: var(--mint);
+  background: transparent;
+  padding: 0;
+  font-size: 11px;
+}
 
 .paper-block { border: 1px solid var(--line); padding: 22px; margin-bottom: 26px; background: rgba(16,24,22,.4); }
 .table-responsive { overflow-x: auto; margin-top: 12px; }
@@ -270,11 +496,17 @@ h1 em, h2 em { color: var(--mint); font-style: normal; }
   .gov-grid { grid-template-columns: 1fr; }
   .cert-hero-score { grid-template-columns: 1fr; }
   .cert-reg-strip { grid-template-columns: 1fr; }
+  .formula-breakdown-row { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 560px) {
   .grades-grid { grid-template-columns: 1fr; }
-  .paper-formula-box .math-display { font-size: 14px; }
+  .formula-breakdown-row { grid-template-columns: 1fr; }
+  .math-main-equation { font-size: 13px; }
+  .math-op-equals { margin: 0 6px; }
+  .math-plus { margin: 0 4px; }
+  .math-term-chip { padding: 3px 6px; font-size: 0.8em; }
+  .paper-formula-box { padding: 18px 16px; }
 }
 
 @media print {

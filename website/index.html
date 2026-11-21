@@ -209,11 +209,85 @@
 
         <!-- FORMULA HIGHLIGHT -->
         <div class="paper-formula-box">
-          <span class="panel-kicker">COMPOSITE DFI EQUATION (SECTION IV-D)</span>
-          <div class="math-display">
-            $$\text{DFI}(u, S) = \sum_{\sigma \in \Sigma} w_\sigma \cdot \text{RS}_\sigma(u, S) = 0.20 \cdot \text{D-RS} + 0.20 \cdot \text{DB-RS} + 0.30 \cdot \text{V-RS} + 0.30 \cdot \text{M-RS}$$
+          <div class="formula-box-header">
+            <span class="panel-kicker">COMPOSITE DFI EQUATION (SECTION IV-D)</span>
+            <div class="formula-header-actions">
+              <span class="formula-canonical-badge">FORMAL SPECIFICATION</span>
+              <button class="copy-latex-btn" id="copyLatexBtn" title="Copy LaTeX Formula"><span>⎘</span> COPY LATEX</button>
+            </div>
           </div>
-          <p>Where $\Sigma = \{\text{Dataset, Database, VectorStore, Model}\}$, $\sum w_\sigma = 1$, and each $\text{RS}_\sigma \in [0, 100]$.</p>
+
+          <div class="math-display" aria-label="DFI(u, S) = sum_{sigma in Sigma} w_sigma * RS_sigma(u, S) = 0.20*D-RS + 0.20*DB-RS + 0.30*V-RS + 0.30*M-RS">
+            <div class="math-main-equation">
+              <!-- LHS: DFI(u, S) -->
+              <div class="math-eq-part math-lhs">
+                <span class="math-func">DFI</span><span class="math-paren">(</span><span class="math-var">u</span><span class="math-sep">,</span> <span class="math-var">S</span><span class="math-paren">)</span>
+              </div>
+
+              <div class="math-symbol math-op-equals">=</div>
+
+              <!-- Summation Definition -->
+              <div class="math-eq-part math-summation-term">
+                <div class="math-sigma-wrapper">
+                  <span class="math-sum-sign">&sum;</span>
+                  <span class="math-sum-limits"><span class="math-var">&sigma;</span>&thinsp;&in;&thinsp;<span class="math-var">&Sigma;</span></span>
+                </div>
+                <div class="math-sum-body">
+                  <span class="math-var">w</span><sub class="math-sub">&sigma;</sub>
+                  <span class="math-dot">&sdot;</span>
+                  <span class="math-func">RS</span><sub class="math-sub">&sigma;</sub><span class="math-paren">(</span><span class="math-var">u</span><span class="math-sep">,</span> <span class="math-var">S</span><span class="math-paren">)</span>
+                </div>
+              </div>
+
+              <div class="math-symbol math-op-equals">=</div>
+
+              <!-- Linear Expansion of Layers -->
+              <div class="math-eq-part math-expansion-term">
+                <div class="math-term-chip chip-d" title="Dataset Residue Score (Weight: 0.20)">
+                  <span class="math-weight">0.20</span>
+                  <span class="math-dot">&sdot;</span>
+                  <span class="math-layer-name">D-RS</span>
+                </div>
+                <span class="math-plus">+</span>
+                <div class="math-term-chip chip-db" title="Database Residue Score (Weight: 0.20)">
+                  <span class="math-weight">0.20</span>
+                  <span class="math-dot">&sdot;</span>
+                  <span class="math-layer-name">DB-RS</span>
+                </div>
+                <span class="math-plus">+</span>
+                <div class="math-term-chip chip-v" title="Vector Store Residue Score (Weight: 0.30)">
+                  <span class="math-weight">0.30</span>
+                  <span class="math-dot">&sdot;</span>
+                  <span class="math-layer-name">V-RS</span>
+                </div>
+                <span class="math-plus">+</span>
+                <div class="math-term-chip chip-m" title="Model Residue Score (Weight: 0.30)">
+                  <span class="math-weight">0.30</span>
+                  <span class="math-dot">&sdot;</span>
+                  <span class="math-layer-name">M-RS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formula-breakdown-row">
+            <div class="formula-chip">
+              <span class="chip-label">SURFACE SET (&Sigma;)</span>
+              <span class="chip-content"><code>&Sigma; = { Dataset, Database, VectorStore, Model }</code></span>
+            </div>
+            <div class="formula-chip">
+              <span class="chip-label">WEIGHT NORMALIZATION</span>
+              <span class="chip-content"><code>&sum;<sub>&sigma;&in;&Sigma;</sub> w<sub>&sigma;</sub> = 1.00 &nbsp;(w<sub>&sigma;</sub> &ge; 0)</code></span>
+            </div>
+            <div class="formula-chip">
+              <span class="chip-label">METRIC RANGE</span>
+              <span class="chip-content"><code>RS<sub>&sigma;</sub> &isin; [0, 100], &nbsp;DFI &isin; [0, 100]</code></span>
+            </div>
+            <div class="formula-chip">
+              <span class="chip-label">TARGET &amp; AUDIT STATE</span>
+              <span class="chip-content"><code>u &isin; Forget Set, &nbsp;S &equiv; Post-Erasure State</code></span>
+            </div>
+          </div>
         </div>
 
         <!-- TABLE II: LAYER COMPONENTS -->

@@ -375,7 +375,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:41.507817+00:00",
+        "measured_at": "2026-11-21T02:35:34.213027+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -407,7 +407,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "33c80db0a61e7b44701400ce3ca33e18533327425a570a95238d33e14449a4bc"
+        "report_hash": "88c3d62ef99f250518fded2702909fbfb18f6d52a5356182f68d7d081b413b24"
       },
       "presentation_report": {
         "scores": {
@@ -425,7 +425,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:41.507817+00:00",
+        "measured_at": "2026-11-21T02:35:34.213027+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -457,7 +457,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "33c80db0a61e7b44701400ce3ca33e18533327425a570a95238d33e14449a4bc"
+        "report_hash": "88c3d62ef99f250518fded2702909fbfb18f6d52a5356182f68d7d081b413b24"
       },
       "evidence": {
         "target_records": 120,
@@ -1785,7 +1785,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:43.500695+00:00",
+        "measured_at": "2026-11-21T02:35:36.248630+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -1817,7 +1817,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "437441a38424471f26074b7d2950de0ab3f24a9d0282362bf8076ccacb55376f"
+        "report_hash": "13e06413258dee74a8fd4badea59490f75e1654f5c2801e06c77e2fb6527939d"
       },
       "presentation_report": {
         "scores": {
@@ -1835,7 +1835,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:43.500695+00:00",
+        "measured_at": "2026-11-21T02:35:36.248630+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -1867,7 +1867,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "437441a38424471f26074b7d2950de0ab3f24a9d0282362bf8076ccacb55376f"
+        "report_hash": "13e06413258dee74a8fd4badea59490f75e1654f5c2801e06c77e2fb6527939d"
       },
       "evidence": {
         "target_records": 120,
@@ -3196,7 +3196,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:45.387488+00:00",
+        "measured_at": "2026-11-21T02:35:38.530711+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -3228,7 +3228,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "33e8fdc541601504b5a97ec51f2a07594be4a46da096c752785ff143f43e781a"
+        "report_hash": "c85c8dd676c9e4ca4c528886d725ccf842336ccbf6d570016a8957470d9a9b55"
       },
       "presentation_report": {
         "scores": {
@@ -3246,7 +3246,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:45.387488+00:00",
+        "measured_at": "2026-11-21T02:35:38.530711+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -3278,7 +3278,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "33e8fdc541601504b5a97ec51f2a07594be4a46da096c752785ff143f43e781a"
+        "report_hash": "c85c8dd676c9e4ca4c528886d725ccf842336ccbf6d570016a8957470d9a9b55"
       },
       "evidence": {
         "target_records": 120,
@@ -4608,7 +4608,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:52.428298+00:00",
+        "measured_at": "2026-11-21T02:35:47.258657+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -4640,7 +4640,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "377d64f7d8ca6ab8835de713baeaf2b6a7f194ceae27613dd8666797872514dd"
+        "report_hash": "3666234ea738c367478cc21b1fdd1eb761dfbe2e8334c9e3315e1ef572870ee8"
       },
       "presentation_report": {
         "scores": {
@@ -4658,7 +4658,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:52.428298+00:00",
+        "measured_at": "2026-11-21T02:35:47.258657+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -4690,7 +4690,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "377d64f7d8ca6ab8835de713baeaf2b6a7f194ceae27613dd8666797872514dd"
+        "report_hash": "3666234ea738c367478cc21b1fdd1eb761dfbe2e8334c9e3315e1ef572870ee8"
       },
       "evidence": {
         "target_records": 120,
@@ -6020,7 +6020,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:54.219129+00:00",
+        "measured_at": "2026-11-21T02:35:49.452599+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -6052,7 +6052,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "35e07123b4bcd57ab95ba1c9a7109d26f2d7090bbaa9e569b3b48641b98ba425"
+        "report_hash": "bdacb2ba88403041159cd7f46ee506fbcc13320bbb34f17d42769abfb8caa686"
       },
       "presentation_report": {
         "scores": {
@@ -6070,7 +6070,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:54.219129+00:00",
+        "measured_at": "2026-11-21T02:35:49.452599+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -6102,7 +6102,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "35e07123b4bcd57ab95ba1c9a7109d26f2d7090bbaa9e569b3b48641b98ba425"
+        "report_hash": "bdacb2ba88403041159cd7f46ee506fbcc13320bbb34f17d42769abfb8caa686"
       },
       "evidence": {
         "target_records": 120,
@@ -7432,7 +7432,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:55.999467+00:00",
+        "measured_at": "2026-11-21T02:35:51.435264+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -7464,7 +7464,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "177cfa220a735a17b07cdc864534dd0baba33d11cdc037ef77dd5dc2cb7f498e"
+        "report_hash": "ad9398e950b28e60c81c4e223c283f6745b10da454ece46b278de0f3f677011a"
       },
       "presentation_report": {
         "scores": {
@@ -7482,7 +7482,7 @@
           "model": 0.3
         },
         "probe_version": "dfi-reference-1.0",
-        "measured_at": "2026-11-21T02:24:55.999467+00:00",
+        "measured_at": "2026-11-21T02:35:51.435264+00:00",
         "scope": {
           "subjects": 30,
           "records": 120,
@@ -7514,7 +7514,7 @@
           }
         },
         "previous_hash": null,
-        "report_hash": "177cfa220a735a17b07cdc864534dd0baba33d11cdc037ef77dd5dc2cb7f498e"
+        "report_hash": "ad9398e950b28e60c81c4e223c283f6745b10da454ece46b278de0f3f677011a"
       },
       "evidence": {
         "target_records": 120,

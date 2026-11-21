@@ -464,6 +464,25 @@ function setupCertModal() {
     const hash = item?.report?.report_hash || "d7ca4d4b642c1851f0ed3a963486e93d7319ff9db60d2865e01b808337366f9e";
     navigator.clipboard.writeText(hash).then(() => alert("SHA-256 Report Hash copied to clipboard!"));
   });
+
+  const copyLatexBtn = document.getElementById("copyLatexBtn");
+  if (copyLatexBtn) {
+    copyLatexBtn.addEventListener("click", () => {
+      const latex = "\\text{DFI}(u, \\mathcal{S}) = \\sum_{\\sigma \\in \\Sigma} w_\\sigma \\cdot \\text{RS}_\\sigma(u, \\mathcal{S}) = 0.20 \\cdot \\text{D-RS} + 0.20 \\cdot \\text{DB-RS} + 0.30 \\cdot \\text{V-RS} + 0.30 \\cdot \\text{M-RS}";
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(latex).then(() => {
+          copyLatexBtn.innerHTML = "<span>✓</span> COPIED!";
+          setTimeout(() => {
+            copyLatexBtn.innerHTML = "<span>⎘</span> COPY LATEX";
+          }, 2200);
+        }).catch(() => {
+          prompt("Copy LaTeX formula:", latex);
+        });
+      } else {
+        prompt("Copy LaTeX formula:", latex);
+      }
+    });
+  }
 }
 
 async function boot() {
